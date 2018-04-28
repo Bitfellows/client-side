@@ -9,4 +9,4 @@ var app = app || {};
     module.Crypto.all.map(coin => $('#coin-list').append(coin.toHtml()));
   }
   module.coinSearchView = coinSearchView;
-})(app);
+})(app);localStorage

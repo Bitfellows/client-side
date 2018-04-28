@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Bitfellows/client-side#readme",
   "dependencies": {
-    "page": "^1.8.6"
+    "page": "^1.8.6",
+    "page.js": "^4.13.3"
   }
 }

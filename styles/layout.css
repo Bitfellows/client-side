@@ -1,0 +1,31 @@
+/* nav */
+.navHeader {
+  display:inline;
+}
+
+header {
+  font-family: 'Quicksand', sans-serif;
+  background-color:rgba(37, 41, 49, .96);
+  height:50px;
+}
+
+.nav {
+  display:inline-block;
+}
+.nav li {
+  display:inline-block;
+  margin-left:20px;
+}
+.nav li a{
+  text-decoration: none;
+  color:white;
+  transition: 230ms;
+}
+
+.nav li a:hover{
+  text-decoration: underline;
+  color:rgb(25, 255, 121)
+}
+.navHeader a:hover{
+  color:rgb(25, 255, 121)
+}

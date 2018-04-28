@@ -5,15 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BitFellows</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/reset.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/base.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/layout.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/modules/main.css" />
   <link href="https://fonts.googleapis.com/css?family=Titan+One|Varela+Round" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" media="screen" href="styles/base.css">
-  <title>Document</title>
+ font-family: 'Varela Round', sans-serif;
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Titan+One" rel="stylesheet">      
 </head>
 <header>
 <img id="logo" src="./assets/bflogo-cut.png" alt="Logo">
 </header>
 <body>
-
   <section id="login">
     <form>
       <h1>Login</h1>
@@ -87,46 +91,53 @@
 
 
 
+ 
+                  
+ 
+  
+  
+  
+  
+  <!-- lina - main page -->
+  <header>
+    <h2 class="navHeader">
+      <a href="index.html">BitFellows</a>
+    </h2>
+    <ul class="nav">
+      <li>
+        <a href="index.html">Overview</a>
+      </li>
+      <li>
+        <a href="index.html">MyBit</a>
+      </li>
+      <li>
+        <a href="index.html">Coin Search</a>
+      </li>
+      <li>
+        <a href="index.html">About Us</a>
+      </li>
+    </ul>
+  </header>
+  <h1 id="search">Coin Search</h1>
+  <div class="coingroup">
+    <span id="coinchoice">Choose Coin</span>
+    <select name="coins" id="coins">
+        <option value="coin1">BTC - Bit Coin</option>
+        <option value="coin2">LTC - Lite Coin</option>
+        <option value="coin3">ETH - Etherium</option>
+        <option value="coin4">BCH - Bitcoin Cash</option>
+      </select>
+    </div>
 
+    <div class="qtygroup">
+      <span id="qtychoice">Choose Quantity</span>
+      <input name="quantity" id="quantity" type="number" min="0" step="0.25" value="0.00"/>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+    <br><br>
+    <div class="btngroup">
+      <button id="calculate" type="submit">Calculate price</button>
+      <button id="reset">Reset</button>
+    </div>
+  </body>
 </html>

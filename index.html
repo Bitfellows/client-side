@@ -7,18 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>BitFellows</title>
   <link rel="stylesheet" type="text/css" media="screen" href="styles/reset.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="styles/base.css" />
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="styles/base.css" /> -->
   <link rel="stylesheet" type="text/css" media="screen" href="styles/layout.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="styles/modules/main.css" />
   <link href="https://fonts.googleapis.com/css?family=Titan+One|Varela+Round" rel="stylesheet">
- font-family: 'Varela Round', sans-serif;
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Titan+One" rel="stylesheet">      
 </head>
-<header>
+<!-- <header>
 <img id="logo" src="./assets/bflogo-cut.png" alt="Logo">
-</header>
+</header> -->
 <body>
-  <section id="login">
+  <!-- <section id="login">
     <form>
       <h1>Login</h1>
       <input class="input-field" type="text" name="username" placeholder="Please enter your username" required>
@@ -37,7 +36,7 @@
       <button type="submit">Create</button>
     </form>
   </section>
-  <!-- <section id="delete-activity">
+  <section id="delete-activity">
     <div>
       <h3>Delete Activity</h3>
       <h4>Are you sure you wish to delete your activity? All your recent bitcoin selections will be lost.</h4>
@@ -62,7 +61,19 @@
 
 
 
-
+  <section id='overView' class="container">
+      <div>
+      <h2 id="overBTC">Info About Crypto Currecny</h2>
+      <p id="overBTC">Here at Bitfellows we offer consolidated price information about the four most popular crypto currencies...follow the links for more information about each coin </p>
+      <ul>
+      <li><a href="https://www.bitcoin.com/info">Bitcoin</a></li>
+      <li> <a href="https://www.bitcoincash.org/">BitcoinCash</a></li>
+      <li><a href="https://litecoin.com/">Litecoin</a></li>
+      <li><a href="https://www.ethereum.org/">Ethereum</a></li>
+      </ul>
+      </div>
+      </section>
+      <section id="aboutView" class="container"> this is the about us view</section>
 
 
 
@@ -101,7 +112,8 @@
   <!-- lina - main page -->
   <header>
     <h2 class="navHeader">
-      <a href="index.html">BitFellows</a>
+      <!-- <a href="index.html">BitFellows</a> -->
+      <img id="logo" src="./assets/bflogo-cut.png"/>
     </h2>
     <ul class="nav">
       <li>
@@ -133,7 +145,10 @@
       <span id="qtychoice">Choose Quantity</span>
       <input name="quantity" id="quantity" type="number" min="0" step="0.25" value="0.00"/>
     </div>
-
+    
+    <img id="data" src="http://placehold.it/580x175/e6bbad"/> 
+    <img id="graph" src="http://placehold.it/580x210/e6bbad"/>
+  
     <br><br>
     <div class="btngroup">
       <button id="calculate" type="submit">Calculate price</button>

@@ -1,0 +1,25 @@
+
+@media only screen and (max-width:640px ) {
+
+#logo {
+  float: left;
+  padding-right: 80px;
+  padding-top: 10px;
+  margin-left: 20px;
+  width: 95%;
+  height: 75%;
+}
+
+#login {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 15px;
+  float: left;
+}
+
+#create-user {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 15px;
+  float: left;
+
+}
+}

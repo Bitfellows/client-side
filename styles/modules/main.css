@@ -1,0 +1,87 @@
+@media only screen and (max-width:640px ) {
+  #search {
+    font-family: 'Titan One', cursive;
+    font-size:24px;
+    margin-bottom: 1%;
+    margin-top:5%;
+    text-align: center;
+  }
+
+  .coingroup {
+    display: inline-block;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 3px;
+    margin: 15px;
+    vertical-align: top;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    
+  }
+
+  #coins {
+    width:60%;
+    margin-right: 6%;
+    margin-top:2%;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+  }
+  select {
+    border: 1px black solid;
+  }
+  
+  input {
+    border: 1px black solid;
+  }
+
+  .qtygroup {
+    display: inline-block;
+    max-width: 150px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 3px;
+    margin: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: bold; 
+  }
+
+  #quantity {
+    width:90%;
+    font-size: 18px;
+    text-align: center;
+    margin-top:2%;
+    margin-right: 3%;
+  }
+
+  .btngroup button{
+    display: inline-block;
+    max-width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 12px;
+    margin-left: 18%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: bolder; 
+    color: #242931;
+  }
+
+  #calculate {
+    width: 100%;
+  }
+
+  #calculate:hover {
+    cursor: pointer; 
+  }
+
+  #reset {
+    width: 100%;
+  }
+  #reset:hover {
+    cursor: pointer;
+  } 
+}

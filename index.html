@@ -7,9 +7,22 @@
   <title>Document</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li>
+                <a href="/">home</a>
+            </li>
+            <li>
+                <a href="/overView">Overview</a>
+            </li>
+            <li>
+                <a href="/about">About Us</a>
+            </li>
+        </ul>
+    </nav>
   <h1>Welcome to Bitfellows!!</h1>
 
-  <section class="overView container">
+  <section id='overView' class="container">
     <div>
       <h2 id="overBTC">Info About Crypto Currecny</h2>
       <p id="overBTC">Here at Bitfellows we offer consolidated price information about the four most popular crypto currencies...follow the links for more information about each coin </p>
@@ -21,7 +34,13 @@
       </ul>
     </div>
   </section>
+  <section id="aboutView"> this is the about us view</section>
+
+
+<script src="scripts/views/info-view.js"></script>
+<script src="scripts/views/aboutus-view.js"></script>
+<script src="scripts/views/error-view.js"></script>
+<script src="scripts/controller/routes.js"></script>
 
 </body>
-<script src="scripts/views/info-view"></script>
 </html>

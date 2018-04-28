@@ -4,10 +4,10 @@ var app = app || {};
 
 (module => {
 
-  const aboutView = {}
+  const aboutView = {};
 
-  aboutView.init = () => $('#aboutView').show()
+  aboutView.init = () => $('#aboutView').show();
 
-  module.aboutView = aboutView
+  module.aboutView = aboutView;
 
-})(app)
+})(app);

@@ -2,10 +2,10 @@
 
 var app = app || {};
 
-(function(module) {
+((module) => {
   const overView = {};
 
-  overView.init = () => $('.overView').show();
+  overView.init = () => $('#overView').show();
 
-  module.overView = app.overView;
+  module.overView = overView;
 })(app);

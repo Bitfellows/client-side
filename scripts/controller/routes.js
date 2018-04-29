@@ -3,14 +3,15 @@
 
 
 page('/*', (ctx, next) => {
-$('.container').hide();
+  $('.container').hide();
   next();
 })
 
-// page('/', app.indexView.init);
+page('/', app.loginView.init);
 page('/overView', app.overView.init);
+page('/mybit', app.mybitView.init);
+page('/coins',app.coinSearchView.init)
+page('/coins/:name',(ctx) => app.Crypto.fetchAll(ctx.params.name).then(app.coinSearchView.initSearch));
 page('/about', app.aboutView.init);
-//page('/main', app.mainView.init);
-page('/login', app.loginView.init);
-// page('/mybit', app.mybitView.init);
+
 page.start();

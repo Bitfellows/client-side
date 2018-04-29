@@ -7,7 +7,10 @@ var app = app || {};
   const loginView = {};
 
   loginView.init = () => {
+    $('.container').hide();
+    $('.main-header').hide();
     $('#login').show();
+    $('#create-user').show();
   }
   module.loginView = loginView;
 

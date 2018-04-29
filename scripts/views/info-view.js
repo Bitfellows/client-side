@@ -3,15 +3,15 @@
 var app = app || {};
 
 ((module) => {
-const overView = {};
+  const overView = {};
 
-overView.init = () => {
+  overView.init = () => {
     $('#login').hide();
     $('#create-user').hide();
-   // $('#delete-activity').hide();
+    // $('#delete-activity').hide();
     $('.main-header').show();
     $('#overView').show();
-}
+  }
 
-module.overView = overView;
+  module.overView = overView;
 })(app);

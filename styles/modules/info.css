@@ -1,0 +1,27 @@
+#overView {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+
+}
+
+#overView div {
+    text-align: justify;
+    border: solid black 1em;
+    padding: 1em;
+    /* background-color: #e7d380; */
+}
+h2{
+    text-align: center;
+    padding-bottom: .5em;
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    transition: 400ms;
+    color:#e7d380;
+    font-size: 14px;
+  }
+    
+  #overView a:hover {
+    font-size: 15px;
+  }

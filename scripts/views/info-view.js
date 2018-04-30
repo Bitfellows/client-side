@@ -8,8 +8,8 @@ var app = app || {};
   overView.init = () => {
     $('#login').hide();
     $('#create-user').hide();
-    // $('#delete-activity').hide();
     $('.main-header').show();
+    // $('#navHeader').show();
     $('#overView').show();
   }
 

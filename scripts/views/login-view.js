@@ -11,9 +11,8 @@ var app = app || {};
     $('.main-header').hide();
     $('#login').show();
     $('#create-user').show();
-    $('#login-button').on('click',(e)=>{
+    $('#login-button').click((e)=>{
       e.preventDefault();
-      console.log('test');
       page('/overView')
     })
   }

@@ -25,6 +25,9 @@ var app = app || {};
     }
     
   });
+  // $('#reset').on('click',function(){
+  //     $('.select_location').
+  // })
   coinSearchView.initSearch = function() {
     $('#login').hide();
     $('#create-user').hide();

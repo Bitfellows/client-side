@@ -8,6 +8,45 @@ var app = app || {};
     $('#login').hide();
     $('#create-user').hide();
     // $('#delete-activity').hide();
+    $('#main-view').show();
+  }
+  $('.select_location').on('change', function(){
+    if($(this).val() === 'btc'){
+      page('/coins/btc')
+    }
+    if($(this).val() === 'ltc'){
+      page('/coins/ltc')
+    }
+    if($(this).val() === 'eth'){
+      page('/coins/eth')
+    }
+    if($(this).val() === 'bch'){
+      page('/coins/bch')
+    }
+
+  });
+  $('#calculate').on('click',(event)=>{
+    event.preventDefault();
+    let perCoinPrice = $('#coin-list').find('p').first().text().split(':')[1];
+    alert($('#quantity').val() * perCoinPrice);
+
+  })
+  $('#reset').on('click',function(){
+    $('.select_location').get(0).selectedIndex = 0;
+    $('#quantity').val('0.00')
+  });
+  coinSearchView.initSearch = function() {
+    $('#login').hide();
+    $('#create-user').hide();
+    //$('#delete-activity').hide();
+    $('#coin-list').empty();
+    $('#main-view').show();
+    $('#search-view').show();
+    coinSearchView.initChart();
+    $('#chart-view').show();
+    module.Crypto.all.map(coin => $('#coin-list').append(coin.toHtml()));
+  }
+  coinSearchView.initChart = function(){
     var c1 = 'red';
     var c2 = 'blue';
     var c3 = 'green';
@@ -73,7 +112,7 @@ var app = app || {};
         },
       })
     }
-function makeChartB (){
+    function makeChartB (){
       var ctx = $('#chartB');
       var priceChart = new Chart(ctx, {
         type: 'bar',
@@ -94,37 +133,8 @@ function makeChartB (){
       })
     }
 
-makeChartA();
+    makeChartA();
     makeChartB();
-
-    $('#main-view').show();
-  }
-  $('.select_location').on('change', function(){
-    if($(this).val() === 'btc'){
-      page('/coins/btc')
-    }
-    if($(this).val() === 'ltc'){
-      page('/coins/ltc')
-    }
-    if($(this).val() === 'eth'){
-      page('/coins/eth')
-    }
-    if($(this).val() === 'bch'){
-      page('/coins/bch')
-    }
-
-  });
-  // $('#reset').on('click',function(){
-  //     $('.select_location').
-  // })
-  coinSearchView.initSearch = function() {
-    $('#login').hide();
-    $('#create-user').hide();
-    //$('#delete-activity').hide();
-    $('#coin-list').empty();
-    $('#main-view').show();
-    $('#search-view').show();
-    module.Crypto.all.map(coin => $('#coin-list').append(coin.toHtml()));
   }
   module.coinSearchView = coinSearchView;
 })(app);

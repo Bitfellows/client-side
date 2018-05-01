@@ -31,9 +31,28 @@ var barChartData = {
   ]
 };
 
+var stackedBarData = {
+  labels: ["Exchange 1", "Exchange 2", "Exchange 3", "Exchange 4"],
+  datasets: [
+    {
+      label: "Bid",
+      backgroundColor: c3,
+      data:[
+        20, 30, 40, 50, 0
+      ]
+    },
+    {
+      label: "Ask",
+      backgroundColor: c4,
+      data: [
+        30, 40, 50, 60, 0
+      ]
+    },
+  ]
+};
 
-function makeChart (){
-  var ctx = $("#testerooChart");
+function makeChartA (){
+  var ctx = $("#chartA");
   var priceChart = new Chart(ctx, {
     type: 'bar',
     data: barChartData,
@@ -48,4 +67,26 @@ function makeChart (){
     },
   })
 };
-makeChart();
+function makeChartB (){
+  var ctx = $("#chartB");
+  var priceChart = new Chart(ctx, {
+    type: 'bar', 
+    data: stackedBarData,
+    options: {
+      responsive: true,
+      scales: {
+        xAxes: [{
+          stacked: true,
+        }],
+        yAxes: [{
+          stacked: true,
+        }],
+      },
+    },
+    legend: {display: false},
+    title: {display: true, fontColor: 'black', text: 'Bid/Ask'},
+  })
+};
+
+makeChartA();
+makeChartB();

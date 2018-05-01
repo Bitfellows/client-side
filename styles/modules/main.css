@@ -48,6 +48,10 @@
     font-size: 18px;
     font-weight: bold; 
   }
+  /* canvas {
+    width: 580px;
+    height: 210px; 
+  } */
 
   #quantity {
     width:90%;
@@ -82,8 +86,8 @@
 
   #calculate {
     width: 100%;
-    /* background-color: #FEFF49; 
-    background-color: #E7D380;
+    color: #e7d380;
+    font-family: 'Quicksand', sans-serif;
   }
 
   #calculate:hover {
@@ -92,11 +96,25 @@
 
   #reset {
     width: 100%;
-    color: white;
-    background-color: #405fdb;
-    /* background-color: #358eff; */
+    color: #e7d380; 
+    font-family: 'Quicksand', sans-serif;
   }
   #reset:hover {
     cursor: pointer;
   } 
-} */
+
+  b {
+    font-weight: bold;
+  }
+
+  .coin-container{
+    margin: 0 auto;
+    width: 580px;
+    height: 75px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+  }
+  hr{
+    border-top: 1px dotted #e7d380;
+    }
+}

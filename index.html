@@ -26,6 +26,7 @@
           <h3><b>Market:</b>{{market}}</h3>
           <p><b>Current Price:</b>{{price}}</p>
           <p><b>Volume:</b>{{volume}}</p>
+          <p><b>Past hour(+- $):</b>{{change}}</p>
           <hr>
           <br>
       </div>
@@ -210,8 +211,10 @@
     <h2 class="view-title">Error</h2>
     <section id="error-message"></section>
   </section>
+  <section id="chart-view" class="container">
   <canvas id="chartA" width="580" height="210">This is a label for Chart 1</canvas>
   <canvas id="chartB" width="580" height="210">This is a label for Chart 2</canvas>
+  </section>
 
 
     <!-- External CDN Resources -->

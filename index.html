@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,17 +45,18 @@
           <br>
       </div>
     </li>
-  </script> 
+  </script>
   <script type="text/x-handlebars-template" id="error-template">
     <h3>Oops, something went wrong!</h3>
     <p>{{status}}: {{statusText}}</p>
-    </script>     
+  </script>
 </head>
 <header>
-    <a href = "../"> 
-      <img id="logo" src="./assets/bflogo-cut.png" alt="Logo">
-    </a>
+  <a href="../">
+    <img id="logo" src="./assets/bflogo-cut.png" alt="Logo">
+  </a>
 </header>
+
 <body>
   <section id="login" class="container">
     <form>
@@ -70,13 +71,59 @@
       <p>Don't have an account? Create one!</p>
       <h2>New User</h2>
       
+      <input class="input-field" type="text" id="fname" placeholder="Please enter your first name..." required>
+      <input class="input-field" type="text" id="lname" placeholder="Please enter your last name..." required>
       <input class="input-field" type="text" id="name" placeholder="Please enter your name..." required>
       <input class="input-field" type="text" id="email" placeholder="Please enter your email address..." required>
       <input class="input-field" type="text" id="username" placeholder="Please create username..." required>
       <input class="input-field" type="password" id="password" placeholder="Please create password..." required>
-      <button type="submit">Create</button>
+      <a href="../overView"><button type="submit">Create</button></a>
     </form>
   </section>
+
+    <section id="aboutView" class="container">
+      <h4 id="aboutUs">About Our Team</h4>
+      <ul id="about-us">
+        <li>
+          <img src="./assets/James.jpg" class="circle" alt="James">
+          <div class="bio">
+            <h2>James McDaniel</h2>
+            <p>I am a cycling nerd and computer geek that can't decide if I want to embrace technology or escape it. When I'm not coding,
+            I like to camp and ride bikes. Washington is the ninth state I've lived in, and so far it's my favorite.</p>
+          </div>
+        </li>
+        <li>
+          <img src="./assets/Madhu.jpg" class="circle" alt="Madhu">
+          <div class="bio">
+            <h2>Madhu Rebbana</h2>
+            <p></p>
+          </div>
+        </li>
+        <li>
+          <img src="./assets/Lina.png" class="circle" alt="Lina">
+          <div class="bio">
+            <h2>Lina Mukherjee </h2>
+            <p></p>
+          </div>
+        </li>
+        <li>
+          <img src="./assets/Tama.jpg" class="circle" alt="Tama">
+          <div class="bio">
+            <h2>Tama Rushin</h2>
+            <p>I am a Mechanical Engineer and an artist at heart. I'm the kind of artist whose mom still thinks everything I create is "amazing!" and puts it up on the refriderator. My goal is front end Java Script. I would also love to be technical recruiter for a large company.</p>
+          </div>
+        </li>
+        <li>
+          <img src="./assets/Michael.png" class="circle" alt="Michael">
+          <div class="bio">
+            <h2>Michael Lennerblom</h2>
+            <p>When I joined Bitfellows back in April of 2018, I knew very little about cryptocurrency and was excited to learn a bit more
+            about it, and blockchain technology as well. After just one week of being part of this team I was already in the know of
+            where to find the best crypto prices from reputable online platforms.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
   <!-- <section id="delete-activity">
     <div>
       <h3>Delete Activity</h3>
@@ -101,11 +148,9 @@
 
 
 
-      
 
-<!-- Michael begin -->
-  
 
+  <!-- Michael begin -->
 
 
 
@@ -131,15 +176,17 @@
 
 
 
- 
-                  
- 
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
   <!-- lina - main page -->
-  <header class = "main-header">
+  <header class="main-header">
     <h2 class="navHeader">
       <!-- <a href = "../"><img id="logo" class="nav-logo" src="./assets/bflogo-cut.png"/></a> -->
     </h2>
@@ -158,73 +205,185 @@
       </li>
     </ul>
   </header>
-  <section id='overView' class="container" >
-      <div>
+  <section id='overView' class="container">
+    <div>
       <h2 id="overBTC">The Bitfellows Mission</h2>
-      <p id="overBTC">Here at Bitfellows our mission is to offer up to the minute price information on the four most popular crypto currencies so you can be assured of the best buying or selling price the market has to offer.  We offer data for Bitcoin Core, Litecoin, Euthereum, and Bitcoin Cash.</p>
+      <p id="overBTC">Here at Bitfellows our mission is to offer up to the minute price information on the four most popular crypto currencies
+        so you can be assured of the best buying or selling price the market has to offer. We offer data for Bitcoin Core,
+        Litecoin, Euthereum, and Bitcoin Cash.</p>
     </div>
       <div id="BTC">
-        <h2>Bitcoin Core</h2>
+        <h2>Bitcoin Core<img src="assets/bitcoin core.png" alt="bitcoin core image"/></h2>
         <p>Bitcoin Core is an open source project which maintains and releases Bitcoin client software called “Bitcoin Core”.  It is a direct descendant of the original Bitcoin software client released by Satoshi Nakamoto after he published the famous Bitcoin whitepaper.  Bitcoin Core consists of both “full-node” software for fully validating the blockchain as well as a bitcoin wallet. The project also currently maintains related software such as the cryptography library libsecp256k1 and others located at GitHub. <a href="https://bitcoincore.org/">More about Bitcoin...</a></p>
       </div>
       
       <div id="LTC">
-        <h2>Litecoin</h2>Litecoin is a cryptocurrency, which was created in 2011 as a lightweight alternative to Bitcoin; the two key differences between them are: - Litecoin's smaller time intervals between adding new blocks to its Blockchain, which is supposed to decrease transaction times; - Litecoin's mining is governed by the Scrypt algorithm, as opposed to Bitcoin's SHA 256. The purpose of this is to restrict ASIC miners and allow users to efficiently mine Litecoin on regular PC's; it was working as intended for some time until Scrypt ASICs were developed. Since its creation, Litecoin has been very popular, with an almost constant presence in the top 5 of cryptocurrencies by market capitalization (albeit never beating Bitcoin in that regard). <a href="https://litecoin.com/">More about Litecoin...</a>
+        <h2>Litecoin<img src="assets/litecoin.jpeg" alt="litecoin image"/></h2>Litecoin is a cryptocurrency, which was created in 2011 as a lightweight alternative to Bitcoin; the two key differences between them are: - Litecoin's smaller time intervals between adding new blocks to its Blockchain, which is supposed to decrease transaction times; - Litecoin's mining is governed by the Scrypt algorithm, as opposed to Bitcoin's SHA 256. The purpose of this is to restrict ASIC miners and allow users to efficiently mine Litecoin on regular PC's; it was working as intended for some time until Scrypt ASICs were developed. Since its creation, Litecoin has been very popular, with an almost constant presence in the top 5 of cryptocurrencies by market capitalization (albeit never beating Bitcoin in that regard). <a href="https://litecoin.com/">More about Litecoin...</a>
       </div>
       <div id="ETH">
-        <h2>Ethereum</h2>Like Bitcoin, Ethereum is a distributed public blockchain network. Although there are some significant technical differences between the two, the most important distinction to note is that Bitcoin and Ethereum differ substantially in purpose and capability. Bitcoin offers one particular application of blockchain technology, a peer to peer electronic cash system that enables online Bitcoin payments. While the Bitcoin blockchain is used to track ownership of digital currency (bitcoins), the Ethereum blockchain focuses on running the programming code of any decentralized application.
+        <h2>Ethereum<img src="assets/ethereum.png" alt="ethereum image"/></h2>Like Bitcoin, Ethereum is a distributed public blockchain network. Although there are some significant technical differences between the two, the most important distinction to note is that Bitcoin and Ethereum differ substantially in purpose and capability. Bitcoin offers one particular application of blockchain technology, a peer to peer electronic cash system that enables online Bitcoin payments. While the Bitcoin blockchain is used to track ownership of digital currency (bitcoins), the Ethereum blockchain focuses on running the programming code of any decentralized application.
         In the Ethereum blockchain, instead of mining for bitcoin, miners work to earn Ether, a type of crypto token that fuels the network. Beyond a tradeable cryptocurrency, Ether is also used by application developers to pay for transaction fees and services on the Ethereum network. <a href="https://blockgeeks.com/guides/ethereum/">More about Ethereum...</a>
       </div>
       <div id="BCH">
-            <h2>Bitcoin Cash</h2>Bitcoin Cash (BCH) is a peer-to-peer electronic cash system. It is a consensus network that enables a new type of payment method and a completely digital form of money. It is a decentralized peer-to-peer payment network that is powered by its users with no central authority or middlemen. <a href="https://www.bitcoincash.org/">More about Bitcoin Cash...</a>
+            <h2>Bitcoin Cash<img src="assets/bitcoin cash.png" alt="bitcoin image"/></h2>Cash (BCH) is a peer-to-peer electronic cash system. It is a consensus network that enables a new type of payment method and a completely digital form of money. It is a decentralized peer-to-peer payment network that is powered by its users with no central authority or middlemen. <a href="https://www.bitcoincash.org/">More about Bitcoin Cash...</a>
       </div>
-     
   </section>
-      <section id="aboutView" class="container"> this is the about us view</section>
-      
-      <section id="mybitView" class="container">
-          <section class="mybitView-list">
-              <ul id="mybitView-list"></ul>
-            </section>
-      </section>
-     
+   
   <section id="main-view" class="container">
-      <h1 id="search">Coin Search</h1>
-      <div class="coingroup">
-        <span id="coinchoice">Choose Coin</span>
-        <select class = "select_location" name="coins" id="coins">
-            <option class = "default" value="" disabled selected>Please select an option</option>
-            <option value="btc">BTC - Bit Coin</option>
-            <option value="ltc">LTC - Lite Coin</option>
-            <option value="eth">ETH - Ethereum</option>
-            <option value="bch">BCH - Bitcoin Cash</option>
-          </select>
-        </div>
-        <div class="qtygroup">
-          <span id="qtychoice">Choose Quantity</span>
-          <input name="quantity" id="quantity" type="number" min="0" step="0.25" value="0.00"/>
-        </div>
-        <!-- <img id="data" src="http://placehold.it/580x175/e6bbad"/> 
-        <img id="graph" src="http://placehold.it/580x210/e6bbad"/> -->
-      
-        <br><br>
-        <div class="btngroup">
-          <button id="calculate" type="submit">Calculate price</button>
-          <button id="reset">Reset</button>
-        </div>
-        </section>
-        <br>
-    <section id="search-view" class="container">
+    <h1 id="search">Coin Search</h1>
+    <div class="coingroup">
+      <span id="coinchoice">Choose Coin</span>
+      <select class="select_location" name="coins" id="coins">
+        <option class="default" value="" disabled selected>Please select an option</option>
+        <option value="btc">BTC - Bit Coin</option>
+        <option value="ltc">LTC - Lite Coin</option>
+        <option value="eth">ETH - Ethereum</option>
+        <option value="bch">BCH - Bitcoin Cash</option>
+      </select>
+    </div>
+    <div class="qtygroup">
+      <span id="qtychoice">Choose Quantity</span>
+      <input name="quantity" id="quantity" type="number" min="0" step="0.25" value="0.00" />
+    </div>
+    <br>
+    <br>
+    <div class="btngroup">
+      <button id="calculate" type="submit">Calculate price</button>
+      <button id="reset">Reset</button>
+    </div>
+  </section>
+  <br>
+  <section id="search-view" class="container">
     <h2 class="view-title"></h2>
     <br>
     <section class="coin-list">
       <ul id="coin-list"></ul>
     </section>
-  </section> 
+    <canvas id="chartA" width="580" height="210">This is a label for Chart 1</canvas>
+    <canvas id="chartB" width="580" height="210">This is a label for Chart 2</canvas>
+  </section>
   <section class="error-view container">
     <h2 class="view-title">Error</h2>
     <section id="error-message"></section>
   </section>
+  <!-- mybit - lina -->
+  <section id="mybitView" class="container">
+    <h2 id="welcome">Welcome to MyBit</h2>
+    <section class="mybitView-list">
+              <ul id="mybitView-list"></ul>
+            </section>
+    <div class="useracts">
+      <h2 id="useract">Your Bit Activity</h2>
+      <table id="userbit">
+        <thead>
+          <tr>
+            <th class="home-td">COIN SELECTED</th>
+            <th class="home-td">QUANTITY</th>
+          </tr>
+          <tr>
+            <td class="home-td"></td>
+            <td class="home-td"></td>
+          </tr>
+          <tr>
+            <td class="home-td"></td>
+            <td class="home-td"></td>
+          </tr>
+          <tr>
+            <td class="home-td"></td>
+            <td class="home-td"></td>
+          </tr>
+          <tr>
+            <td class="home-td"></td>
+            <td class="home-td"></td>
+          </tr>
+          <tr>
+            <td class="home-td"></td>
+            <td class="home-td"></td>
+          </tr>
+          <tr>
+            <td class="home-td"></td>
+            <td class="home-td"></td>
+          </tr>
+          <tr>
+            <td class="home-td"></td>
+            <td class="home-td"></td>
+          </tr>
+          <tr>
+            <td class="home-td"></td>
+            <td class="home-td"></td>
+          </tr>
+          <tr>
+            <td class="home-td"></td>
+            <td class="home-td"></td>
+          </tr>
+          <tr>
+            <td class="home-td"></td>
+            <td class="home-td"></td>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <div class="updatebtn">
+      <button id="update" type="submit">Update Profile</button>
+      <button id="clear" type="submit">Clear Activity</button>
+    </div>
+
+    <div id="update-form" class="modal">
+      <!-- pop-up modal from w3school.com -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="innerModal">
+          <div class="modal-header">
+            <h2>Update Profile</h2>
+            <br>
+          </div>
+          <div class="modal-body">
+            <form id="form">
+              <fieldset>
+                <label for="name">Name</label>
+                <input name="name" type="text" />
+                <br>
+                <br>
+                <label for="emailaddress">Email:</label>
+                <input name="emailaddress" type="text" />
+                <br>
+                <br>
+                <label for="username">Username:</label>
+                <input name="username" type="text" />
+                <br>
+                <br>
+                <label for="password">Password:</label>
+                <input name="password" type="text" />
+                <br>
+                <br>
+                <button id="save" type="submit">Save</button>
+              </fieldset>
+            </form>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div id="clear-activity" class="modal">
+        <!-- pop-up modal from w3school.com -->
+        <div class="modal-content1">
+          <span class="close">&times;</span>
+          <div class="innerModal1">
+            <div class="modal-header1">
+              <h2>Are you sure you want to clear your activity?</h2>
+              <br>
+            </div>
+            <div class="modal-body1">
+              <button id="yes" type="submit">Yes</button>
+              <button id="no" type="submit">No</button>
+            </div>
+          </div>
+        </div>
+        </div>
+
+  </section>
+
   <section id="chart-view" class="container">
   <canvas id="chartA" width="580" height="210">This is a label for Chart 1</canvas>
   <canvas id="chartB" width="580" height="210">This is a label for Chart 2</canvas>
@@ -239,6 +398,7 @@
 
 <!-- Application Resources -->
 <script src="./scripts/models/crypto.js" type="text/javascript"></script>
+<script src="./scripts/models/login.js" type="text/javascript"></script>
 <script src="./scripts/views/main-view.js" type="text/javascript"></script>
 <script src="./scripts/views/aboutus-view.js" type="text/javascript"></script>
 <script src="./scripts/views/error-view.js" type="text/javascript"></script>

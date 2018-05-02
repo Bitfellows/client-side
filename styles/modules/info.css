@@ -25,3 +25,8 @@ a {
   #overView a:hover {
     font-size: 15px;
   }
+  img {
+      float: left;
+      margin-left: 1em;
+      width: 8%;
+  }

@@ -8,6 +8,7 @@ var app = app || {};
     $('#login').hide();
     $('#create-user').hide();
     // $('#delete-activity').hide();
+    console.log(module.Crypto.chartData)
     $('#main-view').show();
   }
   $('.select_location').on('change', function(){

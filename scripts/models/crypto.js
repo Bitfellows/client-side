@@ -7,7 +7,7 @@ ENV.isProduction = window.location.protocol === 'https:';
 ENV.productionApiUrl = 'https://bitfellows.herokuapp.com';
 ENV.developmentApiUrl = 'http://localhost:3000';
 ENV.apiUrl = ENV.isProduction ? ENV.productionApiUrl : ENV.developmentApiUrl;
-
+//ENV.apiUrl = 'https://bitfellows.herokuapp.com'; //***Danger-This is only to test local client to remote server calls*/
 (function(module) {
   function errorCallback(err) {
     console.error(err);
@@ -28,10 +28,10 @@ ENV.apiUrl = ENV.isProduction ? ENV.productionApiUrl : ENV.developmentApiUrl;
       .catch(errorCallback);
 
 
-  Crypto.one = [];
-  Crypto.fetchCoin = (name) =>
-    $.getJSON(`${ENV.apiUrl}/api/v1/coins/${name}`)
-      .then(results => Crypto.one = results.map(coin => new Crypto(coin)))
+  Crypto.chartData = [];
+  Crypto.fetchChartData = () =>
+    $.getJSON(`${ENV.apiUrl}/api/v1/ticker`)
+      .then(results => Crypto.chartData = results.slice(0,9).map(coin => new Crypto(coin)))
       .catch(errorCallback);
   
   module.Crypto = Crypto;

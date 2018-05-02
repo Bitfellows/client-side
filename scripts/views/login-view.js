@@ -7,6 +7,7 @@ var app = app || {};
   const loginView = {};
 
   loginView.init = () => {
+    $('#aboutView').hide();
     $('.container').hide();
     $('.main-header').hide();
     $('#login').show();

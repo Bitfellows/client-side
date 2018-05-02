@@ -5,6 +5,7 @@ var app = app || {};
 (function(module) {
   const coinSearchView = {};
   coinSearchView.init = function() {
+    $('#aboutView').hide();
     $('#login').hide();
     $('#create-user').hide();
     // $('#delete-activity').hide();
@@ -36,6 +37,7 @@ var app = app || {};
     $('#quantity').val('0.00')
   });
   coinSearchView.initSearch = function() {
+    $('#aboutView').hide();
     $('#login').hide();
     $('#create-user').hide();
     //$('#delete-activity').hide();

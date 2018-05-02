@@ -58,7 +58,6 @@
 </header>
 
 <body>
-
   <section id="login" class="container">
     <form>
       <h1>Login</h1>
@@ -81,6 +80,50 @@
       <a href="../overView"><button type="submit">Create</button></a>
     </form>
   </section>
+
+    <section id="aboutView" class="container">
+      <h4 id="aboutUs">About Our Team</h4>
+      <ul id="about-us">
+        <li>
+          <img src="./assets/James.jpg" class="circle" alt="James">
+          <div class="bio">
+            <h2>James McDaniel</h2>
+            <p>I am a cycling nerd and computer geek that can't decide if I want to embrace technology or escape it. When I'm not coding,
+            I like to camp and ride bikes. Washington is the ninth state I've lived in, and so far it's my favorite.</p>
+          </div>
+        </li>
+        <li>
+          <img src="./assets/Madhu.jpg" class="circle" alt="Madhu">
+          <div class="bio">
+            <h2>Madhu Rebbana</h2>
+            <p></p>
+          </div>
+        </li>
+        <li>
+          <img src="./assets/Lina.png" class="circle" alt="Lina">
+          <div class="bio">
+            <h2>Lina Mukherjee </h2>
+            <p></p>
+          </div>
+        </li>
+        <li>
+          <img src="./assets/Tama.jpg" class="circle" alt="Tama">
+          <div class="bio">
+            <h2>Tama Rushin</h2>
+            <p>I am a Mechanical Engineer and an artist at heart. I'm the kind of artist whose mom still thinks everything I create is "amazing!" and puts it up on the refriderator. My goal is front end Java Script. I would also love to be technical recruiter for a large company.</p>
+          </div>
+        </li>
+        <li>
+          <img src="./assets/Michael.png" class="circle" alt="Michael">
+          <div class="bio">
+            <h2>Michael Lennerblom</h2>
+            <p>When I joined Bitfellows back in April of 2018, I knew very little about cryptocurrency and was excited to learn a bit more
+            about it, and blockchain technology as well. After just one week of being part of this team I was already in the know of
+            where to find the best crypto prices from reputable online platforms.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
   <!-- <section id="delete-activity">
     <div>
       <h3>Delete Activity</h3>
@@ -185,12 +228,6 @@
             <h2>Bitcoin Cash<img src="assets/bitcoin cash.png" alt="bitcoin image"/></h2>Cash (BCH) is a peer-to-peer electronic cash system. It is a consensus network that enables a new type of payment method and a completely digital form of money. It is a decentralized peer-to-peer payment network that is powered by its users with no central authority or middlemen. <a href="https://www.bitcoincash.org/">More about Bitcoin Cash...</a>
       </div>
   </section>
-      <section id="aboutView" class="container"> this is the about us view</section>
-      <section id="mybitView" class="container">
-          <section class="mybitView-list">
-              <ul id="mybitView-list"></ul>
-            </section>
-      </section>
    
   <section id="main-view" class="container">
     <h1 id="search">Coin Search</h1>
@@ -232,7 +269,9 @@
   <!-- mybit - lina -->
   <section id="mybitView" class="container">
     <h2 id="welcome">Welcome to MyBit</h2>
-
+    <section class="mybitView-list">
+              <ul id="mybitView-list"></ul>
+            </section>
     <div class="useracts">
       <h2 id="useract">Your Bit Activity</h2>
       <table id="userbit">

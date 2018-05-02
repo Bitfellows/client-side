@@ -6,6 +6,7 @@ var app = app || {};
   const overView = {};
 
   overView.init = () => {
+    $('#aboutView').hide();
     $('#login').hide();
     $('#create-user').hide();
     $('.main-header').show();

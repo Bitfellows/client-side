@@ -6,9 +6,9 @@
 header {
   font-family: 'Quicksand', sans-serif;
   background-color:rgba(37, 41, 49, .96);
-  /* background-color: #7b92e3; */
-  height:50px;
-}
+  /*background-color: #7b92e3; */
+  height:40px;
+} 
 
 #logo {
   width: 170px;
@@ -35,4 +35,4 @@ header {
 }
 .navHeader a:hover{
   color:rgb(25, 255, 121)
-} */
+} 

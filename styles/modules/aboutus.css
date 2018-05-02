@@ -1,6 +1,6 @@
 #aboutUs {
   text-align: center;
-  font-size: 14px;
+  font-size: 28px;
   font-family: 'Varela Round', sans-serif;
 }
 
@@ -30,6 +30,7 @@
 #about-us h4 {
   font-weight: bolder;
   padding-left: 10%;
+  font-size: 30px;
   /* margin-bottom: 10px; */
 }
 
@@ -38,7 +39,7 @@
   font-size: 14px;
 }
 
-#about-us li:last-child {
+/* #about-us li:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
-}
+} */

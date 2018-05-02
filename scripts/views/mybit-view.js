@@ -11,13 +11,14 @@ var app = app || {};
     $('#create-user').hide();
     $('#overView').hide();
     // $('#navHeader').show();
-    $('.main-header').show();
-    $('#mybitView').show();
     $('#update-form').hide();
-    $('#mybitView').show();
     $("#clear-activity").hide();
-
+    $('#mybitView-list').empty();
+    $('#mybitView').show();
+    $('.main-header').show();
+    module.Crypto.mybit.map(bit => $('#mybitView-list').append(bit.mybitToHtml()));
   }
+  
   $("#update").click(function () {
     $("#update-form").show();
   }); 

@@ -13,9 +13,13 @@ var app = app || {};
     $('#create-user').show();
     $('#login-button').click((e)=>{
       e.preventDefault();
+      var user_name = $('#user_name').val()
+      loginView.user_name = user_name;
+      console.log(user_name);
       page('/overView')
     })
   }
+  
   module.loginView = loginView;
 
 })(app);

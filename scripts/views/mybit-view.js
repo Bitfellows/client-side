@@ -8,6 +8,8 @@ var app = app || {};
 
   mybitView.init = () => {
     $('#mybitView').show();
+    $('#mybitView-list').empty();
+    module.Crypto.mybit.map(bit => $('#mybitView-list').append(bit.mybitToHtml()));
   }
   module.mybitView = mybitView;
 

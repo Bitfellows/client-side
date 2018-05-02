@@ -20,6 +20,10 @@ ENV.apiUrl = ENV.isProduction ? ENV.productionApiUrl : ENV.developmentApiUrl;
     let template = Handlebars.compile($('#coin-results-template').text());
     return template(this);
   }
+  Crypto.prototype.mybitToHtml = function() {
+    let template = Handlebars.compile($('#mybitView-template').text());
+    return template(this);
+  }
   Crypto.all = [];
   Crypto.loadAll = rows => Crypto.all = rows.slice(0,5).map(crypto => new Crypto(crypto));
   Crypto.fetchAll = (name) =>
@@ -27,12 +31,20 @@ ENV.apiUrl = ENV.isProduction ? ENV.productionApiUrl : ENV.developmentApiUrl;
       .then(Crypto.loadAll)
       .catch(errorCallback);
 
-
   Crypto.chartData = [];
   Crypto.fetchChartData = () =>
     $.getJSON(`${ENV.apiUrl}/api/v1/ticker`)
       .then(results => Crypto.chartData = results.slice(0,9).map(coin => new Crypto(coin)))
       .catch(errorCallback);
+
+  Crypto.prototype.insertRecord = function(){
+    $.post(`${ENV.apiUrl}/bitfellows`,{user_name:this.user_name,coin:this.coin,qty:this.qty})
+      .then(console.log);
+  };
+  Crypto.mybit =[];
+  Crypto.fetchActivity = () =>
+    $.get(`${ENV.apiUrl}/mybit`)
+      .then(results => Crypto.mybit = results.map(activity=> new Crypto(activity)))
   
   module.Crypto = Crypto;
 

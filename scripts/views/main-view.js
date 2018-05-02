@@ -29,9 +29,26 @@ var app = app || {};
   $('#calculate').on('click',(event)=>{
     event.preventDefault();
     let perCoinPrice = $('#coin-list').find('p').first().text().split(':')[1];
-    alert($('#quantity').val() * perCoinPrice);
-
+    if(parseInt($('#quantity').val())>0){
+      coinSearchView.submit();
+      alert($('#quantity').val() * perCoinPrice);
+    }
+    else{
+      alert('please enter quantity');
+    }
   })
+  coinSearchView.submit = () =>{
+    //event.preventDefault();
+    let cryptoObj = {
+      user_name:  module.loginView.user_name,
+      coin:  $('.select_location').val(),
+      qty: $('#quantity').val()
+    };
+    console.log(cryptoObj);
+    let myBit = new module.Crypto(cryptoObj);
+    console.log(myBit);
+    myBit.insertRecord();
+  }
   $('#reset').on('click',function(){
     $('.select_location').get(0).selectedIndex = 0;
     $('#quantity').val('0.00')

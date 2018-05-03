@@ -10,6 +10,7 @@ var app = app || {};
     $('#create-user').hide();
     // $('#delete-activity').hide();
     console.log(module.Crypto.chartData)
+    $('#reset').click();
     $('#main-view').show();
   }
   $('.select_location').on('change', function(){
@@ -30,8 +31,7 @@ var app = app || {};
   $('#calculate').on('click',(event)=>{
     event.preventDefault();
     let perCoinPrice = $('#coin-list').find('p').first().text().split(':')[1];
-        
-    if(parseInt($('#quantity').val()) > -1){
+    if(parseInt($('#quantity').val())>-1){
       coinSearchView.submit();
 
       var coinresult = (parseInt($('#quantity').val()) * perCoinPrice);
@@ -79,94 +79,98 @@ var app = app || {};
     module.Crypto.all.map(coin => $('#coin-list').append(coin.toHtml()));
   }
   coinSearchView.initChart = function(){
-    var c1 = 'red';
-    var c2 = 'blue';
-    var c3 = 'green';
-    var c4 = 'yellow';
-    var val1a = 50;
-    var val1b = 50;
-    var val2a = 60;
-    var val2b = 55;
-    var val3a = 40;
-    var val3b = 35;
-    var val4a = 25;
-    var val4b = 67;
-
-    var barChartData = {
-      labels: ['Coin 1', 'Coin 2', 'Coin 3', 'Coin 4'],
+    var c1 = 'black';
+    var c2 = 'gold';
+    var c3 = 'tan';
+    var c4 = 'gray';
+    var chart1Data = {
+      labels: [
+        app.Crypto.chartData[0].name,
+        app.Crypto.chartData[6].name,
+        app.Crypto.chartData[1].name,
+        app.Crypto.chartData[3].name
+      ],
       datasets: [
         {
           label: 'Current Price',
           backgroundColor: c1,
-          data: [val1a, val2a, val3a, val4a, 0]
+          data: [
+            app.Crypto.chartData[0].price_usd,
+            app.Crypto.chartData[6].price_usd,
+            app.Crypto.chartData[1].price_usd,
+            app.Crypto.chartData[3].price_usd,
+            0
+          ]
         },
         {
-          label: '7d Weighted Avg',
+          label: '7d Average',
           backgroundColor: c2,
-          data: [val1b, val2b, val3b, val4b]
+          data: [
+            +(app.Crypto.chartData[0].percent_change_7d / 100) + +app.Crypto.chartData[0].price_usd,
+            +(app.Crypto.chartData[6].percent_change_7d / 100) + +app.Crypto.chartData[6].price_usd,
+            +(app.Crypto.chartData[1].percent_change_7d / 100) + +app.Crypto.chartData[1].price_usd,
+            +(app.Crypto.chartData[3].percent_change_7d / 100) + +app.Crypto.chartData[3].price_usd,
+          ]
         },
-      ]
+      ],
     };
-
-    var stackedBarData = {
-      labels: ['Exchange 1', 'Exchange 2', 'Exchange 3', 'Exchange 4'],
+    var chart2Data = {
+      labels: [
+        app.Crypto.chartData[0].name,
+        app.Crypto.chartData[6].name,
+        app.Crypto.chartData[1].name,
+        app.Crypto.chartData[3].name
+      ],
       datasets: [
         {
-          label: 'Bid',
+          label: '24h Volume USD',
           backgroundColor: c3,
-          data:[
-            20, 30, 40, 50, 0
+          data: [
+            app.Crypto.chartData[0]["24h_volume_usd"],
+            app.Crypto.chartData[6]["24h_volume_usd"],
+            app.Crypto.chartData[1]["24h_volume_usd"],
+            app.Crypto.chartData[3]["24h_volume_usd"],
+            0
           ]
         },
         {
-          label: 'Ask',
+          label: 'US Market Cap',
           backgroundColor: c4,
           data: [
-            30, 40, 50, 60, 0
+            app.Crypto.chartData[0].market_cap_usd,
+            app.Crypto.chartData[6].market_cap_usd,
+            app.Crypto.chartData[1].market_cap_usd,
+            app.Crypto.chartData[3].market_cap_usd
           ]
         },
-      ]
+      ],  
     };
-
     function makeChartA (){
       var ctx = $('#chartA');
-      var priceChart = new Chart(ctx, {
+      var priceChartA = new Chart(ctx, {
         type: 'bar',
-        data: barChartData,
+        data: chart1Data,
         options: {
           responsive: true,
-          scales: {
-            label: '',
-          },
           legend: {display: false},
-
-          title: {display: true, fontColor: 'black', text: 'Price'},
+          title: {display: true, fontColor: 'black', text: 'Price to 7 Day Weighted Average:'}
         },
       })
     }
     function makeChartB (){
       var ctx = $('#chartB');
-      var priceChart = new Chart(ctx, {
+      var priceChartB = new Chart(ctx, {
         type: 'bar',
-        data: stackedBarData,
+        data: chart2Data,
         options: {
           responsive: true,
-          scales: {
-            xAxes: [{
-              stacked: true,
-            }],
-            yAxes: [{
-              stacked: true,
-            }],
-          },
+          legend: {display: false},
+          title: {display: true, fontColor: 'black', text: '24 Hour Volume to US Market Cap:'}
         },
-        legend: {display: false},
-        title: {display: true, fontColor: 'black', text: 'Bid/Ask'},
       })
     }
-
     makeChartA();
     makeChartB();
-  }
+  };
   module.coinSearchView = coinSearchView;
 })(app);

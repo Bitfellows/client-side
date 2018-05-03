@@ -30,14 +30,26 @@ var app = app || {};
   $('#calculate').on('click',(event)=>{
     event.preventDefault();
     let perCoinPrice = $('#coin-list').find('p').first().text().split(':')[1];
-    if(parseInt($('#quantity').val())>0){
+        
+    if(parseInt($('#quantity').val()) > -1){
       coinSearchView.submit();
-      alert($('#quantity').val() * perCoinPrice);
+
+      var coinresult = (parseInt($('#quantity').val()) * perCoinPrice);
+
+      console.log(coinresult);
+
+      // $('#resulttext').append(coinresult);
+      $('#resulttext').append(`${coinresult}`);
+      $('#resulttext').fadeIn('slow');
+
+      
     }
     else{
       alert('please enter quantity');
     }
   })
+
+
   coinSearchView.submit = () =>{
     //event.preventDefault();
     let cryptoObj = {

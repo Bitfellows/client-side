@@ -10,12 +10,12 @@
     padding: 1em;
     /* background-color: #e7d380; */
 }
-h2{
+#overView h2{
     text-align: center;
     padding-bottom: .5em;
     font-weight: 600;
 }
-a {
+#overView a {
     text-decoration: none;
     transition: 400ms;
     color:#e7d380;
@@ -25,8 +25,8 @@ a {
   #overView a:hover {
     font-size: 15px;
   }
-  img {
+  #overView img {
       float: left;
-      margin-left: 1em;
+      margin: 0 .5em 0 .5em;
       width: 8%;
   }

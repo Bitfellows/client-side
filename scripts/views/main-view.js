@@ -5,6 +5,8 @@ var app = app || {};
 (function(module) {
   const coinSearchView = {};
   coinSearchView.init = function() {
+    $('.video-background').hide();
+    $('.video-foreground').hide();
     $('#aboutView').hide();
     $('#login').hide();
     $('#create-user').hide();

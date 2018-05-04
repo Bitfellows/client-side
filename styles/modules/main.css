@@ -138,4 +138,23 @@
   }
  }
 
+<<<<<<< HEAD
  
+=======
+  b {
+    font-weight: bold;
+  }
+
+  .coin-container{
+    margin: 0 auto;
+    width: 580px;
+    height: 75px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+  }
+  hr{
+    border-top: 1px dotted #e7d380;
+    }
+
+}
+>>>>>>> 8e4817fc65d21377479bcc1823eeee680f11928c

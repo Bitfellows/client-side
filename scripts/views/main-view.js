@@ -33,7 +33,13 @@ var app = app || {};
     let perCoinPrice = $('#coin-list').find('p').first().text().split(':')[1];
     if(parseInt($('#quantity').val())>-1){
       coinSearchView.submit();
-      alert($('#quantity').val() * perCoinPrice);
+      var coinresult = (parseInt($('#quantity').val()) * perCoinPrice);
+
+      console.log(coinresult);
+
+      $('#resulttext').append(`${coinresult}`);
+      $('#resulttext').fadeIn('slow');
+
     }
     else{
       alert('please enter quantity');

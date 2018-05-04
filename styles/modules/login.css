@@ -55,9 +55,10 @@ button {
 #newUser {
   font-family: 'Quicksand', sans-serif;
   float: left;
-  margin: 4rem;
+  margin: .5rem;
   width: 50%;
   color: #e6bc16;
+  
 }
 
 

@@ -55,24 +55,29 @@
     <img id="logo" src="./assets/bflogo-cut.png" alt="Logo">
   </a>
 </header>
+
 <header class="main-header">
-  <h2 class="navHeader">
+  <!-- <h2 class="navHeader"> -->
+      
     <!-- <a href = "../"><img id="logo" class="nav-logo" src="./assets/bflogo-cut.png"/></a> -->
   </h2>
-  <ul class="nav">
-    <li>
-      <a href="../overView">Overview</a>
-    </li>
-    <li>
-      <a href="../mybit">MyBit</a>
-    </li>
-    <li>
-      <a href="../coins">Coin Search</a>
-    </li>
-    <li>
-      <a href="../about">About Us</a>
-    </li>
-  </ul>
+  <nav class="ham-nav">
+    <div id ="ham-menu" class="icon-menu hamburger"></div>
+    <ul class="nav">
+      <li>
+        <a href="../overView">Overview</a>
+      </li>
+      <li>
+        <a href="../mybit">MyBit</a>
+      </li>
+      <li>
+        <a href="../coins">Coin Search</a>
+      </li>
+      <li>
+        <a href="../about">About Us</a>
+      </li>
+    </ul>
+</nav>
 </header>
 <body>
   <section id="login" class="container">
@@ -248,8 +253,9 @@
     </div>
     <div class="qtygroup">
       <span id="qtychoice">Choose Quantity</span>
-      <input name="quantity" id="quantity" type="number" min="0" step="0.25" value="0.00" />
+      <input name="quantity" id="quantity" type="number" min="0" step="1.00" value="1.00" />
     </div>
+    <div id="resulttext" class="result"></div>
     <br>
     <br>
     <div class="btngroup">

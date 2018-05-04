@@ -53,6 +53,14 @@ button {
   font-family: 'Quicksand', sans-serif;
 }
 
+#newUser {
+  font-family: 'Quicksand', sans-serif;
+  float: left;
+  margin: 4rem;
+  width: 50%;
+  color: #e6bc16;
+}
+
 
 
 

@@ -7,8 +7,6 @@ var app = app || {};
   const loginView = {};
 
   loginView.init = () => {
-    $('.video-background').show();
-    $('.video-foreground').show();
     $('#aboutView').hide();
     $('.container').hide();
     $('.main-header').hide();

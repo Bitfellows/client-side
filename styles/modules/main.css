@@ -1,114 +1,282 @@
- @media only screen and (max-width:640px ) {
+@media only screen and (max-width:425px) {
   #search {
-    font-family: 'Titan One', cursive;
-    font-size:24px;
-    margin-bottom: 1%;
-    margin-top:3%;
-    text-align: center;
+   font-family: 'Quicksand', sans-serif;
+   font-weight: bolder;
+   font-size: 0.8em;
+   margin-top: 3%;
+   text-align: center;
+   margin-bottom: 3%;
+  }
+
+  #coinchoice {
+   font-family:'Quicksand', sans-serif;
+   /* font-weight: bold; */
+   font-size: 0.3em;
   }
 
   .coingroup {
-    display: inline-block;
-    max-width: 300px;
-    text-align: center;
-    padding: 20px;
-    border-radius: 3px;
-    margin: 5px;
-    vertical-align: top;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  #coins {
-    width:60%;
-    margin-right: 6%;
-    margin-top:2%;
-    font-size: 18px;
-    display: inline-block;
-    text-align: center;
-  }
-  select {
-    border: 1px black solid;
-  }
-  
-  input {
-    border: 1px black solid;
-  }
-
-  .qtygroup {
-    display: inline-block;
-    max-width: 150px;
-    text-align: center;
-    padding: 20px;
-    border-radius: 3px;
-    margin: 5px;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-    font-weight: bold; 
-  }
-
-  #quantity {
-    width:90%;
-    font-size: 18px;
-    text-align: center;
-    margin-top:2%;
-    margin-right: 3%;
-  }
-
-  #data {
-    max-width: 100%;
-    margin: 20px auto;
-  }
-
-  #graph {
-    max-width: 100%;
-    margin: auto;
-  }
-  .btngroup button{
-    display: inline-block;
-    max-width: 150px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 12px;
-    margin-left: 18%;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
-    font-weight: bolder; 
-    color: #242931;
-  }
-
-  #calculate {
-    width: 100%;
-    color: #e7d380;
-    font-family: 'Quicksand', sans-serif;
-  }
-
-  #calculate:hover {
-    cursor: pointer; 
-  }
-
-  #reset {
-    width: 100%;
-    color: #e7d380; 
-    font-family: 'Quicksand', sans-serif;
-  }
-  #reset:hover {
-    cursor: pointer;
-  } 
-
-  b {
-    font-weight: bold;
-  }
-
-  .coin-container{
-    margin: 0 auto;
-    width: 580px;
-    height: 75px;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-  }
-  hr{
-    border-top: 1px dotted #e7d380;
+   display: inline-block;
+   width: 65%;
+   text-align: center;
+   /* padding: 1%; */
+   border-radius: 3px;
+   margin: auto;
+   /* margin-left: 12%; */
+   /* margin-right: 12%; */
+   vertical-align: top;
+   font-family: 'Quicksand', sans-serif;
+   font-weight: bold;
+ }
+ 
+   #coins {
+     width: 60%;
+     margin-right: 2%;
+     margin-top: 5%;
+     font-size: 0.5em;
+     display: inline-block;
+     text-align: center;
+     margin-bottom: 7%;
+   }
+   
+   select {
+     border: 0.1em black solid;
+     
+   }
+   
+   #qtychoice {
+     font-family: 'Quicksand', sans-serif;
+     font-weight: bold;
+     font-size: 0.8em;
+     margin-top: 3%;
     }
+   
+    .qtygroup {
+     display: inline-block;
+     width: 65%;
+     text-align: center;
+     padding: 1%;
+     border-radius: 3px;
+     margin-left: 12%;
+     margin-right: 12%;
+     vertical-align: top;
+     font-family: 'Quicksand', sans-serif;
+     font-weight: bold;
+    }
+   
+   input {
+     border: 0.1em black solid;
+     width: 10%;
+     padding: 3%;
+     margin: auto;
+   }
+   
+   #quantity {
+     width: 50%;
+     font-size: 0.8em;
+     text-align: center;
+     margin-top: 3%;
+     margin-right: 20%;
+     /* line-height: 1em; */
+     margin-bottom: 3%;
+   }
+   
+   #resulttext {
+     width: 20%;
+     background-color: #e7d380;
+     text-align: center;
+     padding: 1.2%;
+     /* margin: auto; */
+     line-height: 30%;
+     font-size: 1.8em;
+     margin-bottom: 3%;
+   }
+   
+   #data {
+     width: 100%;
+     margin: 10% auto;
+   }
+   
+   #graph {
+     width: 100%;
+     margin: auto;
+   }
+   
+   .btngroup button {
+     display: inline-block;
+     text-align: center;
+     border-radius: 12px;
+     font-size: 1.4em;
+     color: #242931;
+   }
+   
+   #calculate {
+     width: 41%;
+     color: #e7d380;
+     font-family: 'Quicksand', sans-serif;
+     margin-left: 35%;
+   
+   }
+   
+   #reset {
+     width: 41%;
+     color: #e7d380;
+     font-family: 'Quicksand', sans-serif;
+     margin-left: 2%;
+   }
+   
+   .coin-container {
+     /* margin: 0 auto; */
+     width: 95%;
+     height: 60%;
+     text-align: center;
+     font-family: 'Quicksand', sans-serif;
+     font-size: 1.3em;
+   }
+   
+   hr {
+     border-top: 0.2em solid #e7d380;
+   }
+   
+   .nav {
+    font-family: 'Quicksand', sans-serif;
+   }
+   
+}
+
+
+#search {
+ font-family: 'Quicksand', sans-serif;
+ font-weight: bolder;
+ font-size: 1.5em;
+ margin: 3% 0 5% 0;
+ text-align: center;
+}
+
+#coinchoice {
+ text-align: center;
+ font-family:'Quicksand', sans-serif;
+ font-weight: bold;
+ font-size: 1.3em;
+}
+
+.coingroup {
+ display: inline-block;
+ width: 65%;
+ text-align: center;
+ padding: 1%;
+ border-radius: 3px;
+ margin-left: 12%;
+ margin-right: 12%;
+ /* vertical-align: top; */
+ font-family: 'Quicksand', sans-serif;
+ font-weight: bold;
+}
+
+#coins {
+ width: 60%;
+ margin-right: 2%;
+ margin-top: 2%;
+ font-size: 1.4em;
+ display: inline-block;
+ text-align: center;
+}
+
+select {
+ border: 0.1em black solid;
+ padding: 0.5%;
+}
+
+#qtychoice {
+ font-family: 'Quicksand', sans-serif;
+ font-weight: bold;
+ font-size: 1.3em;
+}
+
+.qtygroup {
+ display: inline-block;
+ width: 65%;
+ text-align: center;
+ padding: 1%;
+ border-radius: 3px;
+ margin-left: 12%;
+ margin-right: 12%;
+ /* vertical-align: top; */
+ font-family: 'Quicksand', sans-serif;
+ font-weight: bold;
+}
+
+input {
+ border: 0.1em black solid;
+ width: 10%;
+ padding: 0.5%
+}
+
+#quantity {
+ width: 50%;
+ font-size: 1.2em;
+ text-align: center;
+ margin-top: 2%;
+ margin-right: 20%;
+ line-height: 1em;
+ margin-bottom: 3%;
+}
+
+#resulttext {
+ width: 20%;
+ background-color: #e7d380;
+ text-align: center;
+ padding: 1.2%;
+ margin: auto;
+ font-size: 1.8em;
+ margin-bottom: 3%;
+}
+
+#data {
+ width: 100%;
+ margin: 10% auto;
+}
+
+#graph {
+ width: 100%;
+ margin: auto;
+}
+
+.btngroup button {
+ display: inline-block;
+ text-align: center;
+ border-radius: 12px;
+ font-size: 1.4em;
+ color: #242931;
+}
+
+#calculate {
+ width: 15%;
+ color: #e7d380;
+ font-family: 'Quicksand', sans-serif;
+ margin-left: 35%;
+
+}
+
+#reset {
+ width: 15%;
+ color: #e7d380;
+ font-family: 'Quicksand', sans-serif;
+ margin-left: 2%;
+}
+
+.coin-container {
+ /* margin: 0 auto; */
+ width: 100%;
+ height: 60%;
+ text-align: center;
+ font-family: 'Quicksand', sans-serif;
+ font-size: 1.3em;
+}
+
+hr {
+ border-top: 0.2em solid #e7d380;
+}
+
+.nav {
+font-family: 'Quicksand', sans-serif;
 }

@@ -7,6 +7,8 @@ var app = app || {};
   const aboutView = {};
 
   aboutView.init = () => {
+    $('.video-background').hide();
+    $('.video-foreground').hide();
     $('#login').hide();
     $('#create-user').hide();
     $('#overView').hide();

@@ -33,18 +33,10 @@
     </li>
   </script> 
   <script type="text/x-handlebars-template" id="mybitView-template">
-    <li class="mybitView" data-username={{user_name}}>
-      <div class="mybit-container">
-          <br>
-          <hr>
-          <h3><b>Activity id: </b>{{activity_id}}</h3>
-          <p><b>User: </b>{{user_name}}</p>
-          <p><b>Coin: </b>{{coin}}</p>
-          <p><b>Quantity: </b>{{qty}}</p>
-          <hr>
-          <br>
-      </div>
-    </li>
+    <tr>
+              <td class="home-td">{{coin}}</td>
+              <td class="home-td">{{qty}}</td>
+    </tr>
   </script>
   <script type="text/x-handlebars-template" id="error-template">
     <h3>Oops, something went wrong!</h3>
@@ -92,7 +84,7 @@
     </form>
   </section>
   <section id="create-user" class="container">
-    <form>
+    <form id="newUser">
       <p>Don't have an account? Create one!</p>
       <h3>New User</h3>
       
@@ -101,7 +93,11 @@
       <input class="input-field" type="text" id="email" placeholder="Please enter your email address..." required>
       <input class="input-field" type="text" id="username" placeholder="Please create username..." required>
       <input class="input-field" type="password" id="password" placeholder="Please create password..." required>
-      <a href="../overView"><button type="submit" id="create">Create</button></a>
+
+      
+
+      <button type="submit">Create</button>
+
     </form>
   </section>
 
@@ -216,7 +212,7 @@
       <h2 id="overBTC">The Bitfellows Mission</h2>
       <p id="overBTC">Here at Bitfellows our mission is to offer up to the minute price information on the four most popular crypto currencies
         so you can be assured of the best buying or selling price the market has to offer. We offer data for Bitcoin Core,
-        Litecoin, Euthereum, and Bitcoin Cash.</p>
+        Litecoin, Ethereum, and Bitcoin Cash.</p>
     </div>
       <div id="BTC">
         <h2>Bitcoin Core<img src="assets/bitcoin core.png" alt="bitcoin core image"/></h2>
@@ -275,58 +271,23 @@
   <!-- mybit - lina -->
   <section id="mybitView" class="container">
     <h2 id="welcome">Welcome to MyBit</h2>
-    <section class="mybitView-list">
+    <!-- <section class="mybitView-list">
               <ul id="mybitView-list"></ul>
-            </section>
+            </section> -->
     <div class="useracts">
       <h2 id="useract">Your Bit Activity</h2>
-      <table id="userbit">
+      <table class="userbit">
         <thead>
           <tr>
             <th class="home-td">COIN SELECTED</th>
             <th class="home-td">QUANTITY</th>
           </tr>
-          <tr>
-            <td class="home-td"></td>
-            <td class="home-td"></td>
-          </tr>
-          <tr>
-            <td class="home-td"></td>
-            <td class="home-td"></td>
-          </tr>
-          <tr>
-            <td class="home-td"></td>
-            <td class="home-td"></td>
-          </tr>
-          <tr>
-            <td class="home-td"></td>
-            <td class="home-td"></td>
-          </tr>
-          <tr>
-            <td class="home-td"></td>
-            <td class="home-td"></td>
-          </tr>
-          <tr>
-            <td class="home-td"></td>
-            <td class="home-td"></td>
-          </tr>
-          <tr>
-            <td class="home-td"></td>
-            <td class="home-td"></td>
-          </tr>
-          <tr>
-            <td class="home-td"></td>
-            <td class="home-td"></td>
-          </tr>
-          <tr>
-            <td class="home-td"></td>
-            <td class="home-td"></td>
-          </tr>
-          <tr>
-            <td class="home-td"></td>
-            <td class="home-td"></td>
-          </tr>
         </thead>
+        
+          <tbody id="mybitView-list">
+            
+          </tbody>
+       
       </table>
     </div>
 

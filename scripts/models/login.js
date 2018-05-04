@@ -26,6 +26,9 @@ var app = app || {};
       email: $('#email').val(),
     });
     console.log(newUser);
+    alert('Thank you for creating a new account! Please login with your username and password.');
+    $('#newUser input[type="text"]').val('');
+    $('#newUser input[type="password"]').val('');
     newUser.insertUser();
 
   });

@@ -18,8 +18,13 @@ var app = app || {};
       e.preventDefault();
       var user_name = $('#user_name').val()
       loginView.user_name = user_name;
-      console.log(user_name);
-      page('/overView')
+      //console.log(user_name.length);
+      if(user_name.length<1){
+        alert('ENTER USERNAME & PASSWORD');
+      }
+      else{
+        page('/overView')
+      }
     })
   }
   

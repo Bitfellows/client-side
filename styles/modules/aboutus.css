@@ -5,8 +5,8 @@
 }
 
 .circle {
-  max-height: 100%;
-  max-width: 100%;
+  max-height: 130%;
+  max-width: 130%;
   border-radius: 100%;
   border-style: solid;
   border-color: rgb(124, 104, 16);
@@ -18,7 +18,7 @@
 }
 #about-us li {
   text-align: left;
-  margin: 10px;
+  margin: 1rem;
   background-color: rgba(236, 195, 11, 0.479);
   padding: 15px;
   border-radius: 5px;
@@ -57,13 +57,14 @@
   font-family: 'Varela Round', sans-serif;
 }
 
+
 .circle {
-  max-height: 150px;
-  max-width: 150px;
+  max-height: 130%;
+  max-width: 130%;
   border-radius: 100%;
   border-style: solid;
   border-color: rgb(124, 104, 16);
-  border-width: 3px;
+  border-width: 2px;
   float: left;
   margin-right: 20px;
 

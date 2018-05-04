@@ -1,12 +1,68 @@
 
-/* Desktop Version */
 
-/* body {
-  background-color: red;
-} */
-header {
-  background-color: black
+#logo {
+  padding-top: 10 rem;
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
 }
+
+#login {
+  font-family: 'Quicksand', sans-serif;
+  float: left;
+  margin: 3rem;
+  color: #e0bd2e;
+} 
+
+#login-form{
+  font-family: 'Quicksand', sans-serif;
+  float: left;
+  margin: .5rem;
+  width: 50%;
+  color: #e6bc16; 
+} 
+
+.input-field {
+  display: inline;
+  width: 200px;
+  margin: .8rem auto;
+  border-radius: 5px;
+  border: 1px black solid;
+  padding: .2rem;
+  float: left;
+} 
+
+#login-button {
+  min-width: 80px;
+  margin: inherit;
+  border-radius: 5px;
+  background-color: black;
+  color: #e7d380;
+  padding: .3rem;
+  margin-top: 1rem;
+}
+
+#create-user {
+  font-family: 'Quicksand', sans-serif;
+  float: left;
+  margin: 3rem;
+  width: 50%;
+  color: #e6bc16;
+}
+
+#newUser {
+  font-family: 'Quicksand', sans-serif;
+  float: left;
+  margin: .5rem;
+  width: 50%;
+  color: #e6bc16; 
+} 
+ 
+
+  /* Mobile Version */
+
+@media only screen and (max-width:425px ) {
 
 #logo {
   padding-top: 10 rem;
@@ -21,38 +77,34 @@ header {
   float: left;
   margin: .5rem;
   width: 50%;
-  color: #e0bd2e;
+  color: #e6bc16;
 }
 
 .input-field {
-  display: block;
-  width: 80%;
-  margin: 1.5rem auto;
+  display: inline;
+  width: 200px;
+  margin: .8rem auto;
   border-radius: 5px;
   border: 1px black solid;
-  padding: .5rem;
-}
+  padding: .2rem;
+  float: left;
+} 
 
-button {
-  width: 15%;
-  min-width: 5rem;
-  margin: 0 auto;
+#login-button {
+  min-width: 80px;
+  margin: inherit;
   border-radius: 5px;
   background-color: black;
   color: #e7d380;
-  padding: 1rem;
+  padding: .3rem;
+  margin-top: 5rem;
 }
 
-#create-user {
+section#create-user {
   font-family: 'Quicksand', sans-serif;
   float: left;
-  margin: 5rem;
+  margin: 0;
   width: 50%;
-}
-
-#create-user h2 {
-  float: left;
-  font-family: 'Quicksand', sans-serif;
 }
 
 #newUser {
@@ -61,70 +113,9 @@ button {
   margin: .5rem;
   width: 50%;
   color: #e6bc16;
-  
+} 
 }
 
-
-
-
-  /* Mobile Version */
-
-@media only screen and (max-width:600px ) {
-
-  /* body{
-    background-color: blue;
-  } */
-
-#logo {
-  padding-top: 10px;
-  margin: 0 auto;
-  width: 100%;
-  height: 150px;
-  object-fit: contain;
-}
-
-#login {
-  font-family: 'Quicksand', sans-serif;
-  float: left;
-  margin: 30px;
-  width: 50%;
-  color: 
-}
-
-.input-field {
-  display: block;
-  width: 80%;
-  margin: 15px auto;
-  border-radius: 5px;
-  border: 1px black solid;
-  padding: 5px;
-}
-
-button {
-  width: 15%;
-  min-width: 90px;
-  margin: 0 auto;
-  border-radius: 5px;
-  background-color: black;
-  color: #e7d380;
-  padding: 8px;
-}
-
-#create-user {
-  font-family: 'Quicksand', sans-serif;
-  float: left;
-  margin: 30px;
-  width: 50%;
-}
-
-textarea {
-    resize: none;
-}
-
-submit {
-
-}
-}
 
 @import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
 

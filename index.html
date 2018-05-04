@@ -51,7 +51,13 @@
     <p>{{status}}: {{statusText}}</p>
   </script>
 </head>
-<header>
+<div class="video-background">
+  <div class="video-foreground">
+    <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ"
+      frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<header class="logo-header">
   <a href="../">
     <img id="logo" src="./assets/bflogo-cut.png" alt="Logo">
   </a>
@@ -78,7 +84,7 @@
 <body>
   <section id="login" class="container">
     <form>
-      <h1>Login</h1>
+      <h1 id="login-button">Login</h1>
       <input id = "user_name" class="input-field" type="text" name="username" placeholder="Please enter your username" required>
       <input class="input-field" type="password" name="psw" placeholder="Please enter your password" required>
       <button id="login-button" type="submit">Login</button>
@@ -91,11 +97,10 @@
       
       <input class="input-field" type="text" id="fname" placeholder="Please enter your first name..." required>
       <input class="input-field" type="text" id="lname" placeholder="Please enter your last name..." required>
-      <input class="input-field" type="text" id="name" placeholder="Please enter your name..." required>
       <input class="input-field" type="text" id="email" placeholder="Please enter your email address..." required>
       <input class="input-field" type="text" id="username" placeholder="Please create username..." required>
       <input class="input-field" type="password" id="password" placeholder="Please create password..." required>
-      <a href="../overView"><button type="submit">Create</button></a>
+      <a href="../overView"><button type="submit" id="create">Create</button></a>
     </form>
   </section>
 

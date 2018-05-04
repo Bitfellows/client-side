@@ -1,0 +1,139 @@
+
+/* Desktop Version */
+
+/* body {
+  background-color: red;
+} */
+header {
+  background-color: black
+}
+
+#logo {
+  padding-top: 10 rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#login {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  float: left;
+  margin: 30px;
+  width: 50%;
+}
+
+.input-field {
+  display: block;
+  width: 80%;
+  margin: 15px auto;
+  border-radius: 5px;
+  border: 1px black solid;
+  padding: 5px;
+}
+
+button {
+  width: 15%;
+  min-width: 90px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: black;
+  color: #e7d380;
+  padding: 8px;
+}
+
+#create-user {
+  font-family: 'Quicksand', sans-serif;
+  float: left;
+  margin: 30px;
+  width: 50%;
+}
+
+#create-user h2 {
+  float: left;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+  /* Mobile Version */
+
+@media only screen and (max-width:600px ) {
+
+  /* body{
+    background-color: blue;
+  } */
+
+#logo {
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+#login {
+  font-family: 'Quicksand', sans-serif;
+  float: left;
+  margin: 30px;
+  width: 50%;
+}
+
+.input-field {
+  display: block;
+  width: 80%;
+  margin: 15px auto;
+  border-radius: 5px;
+  border: 1px black solid;
+  padding: 5px;
+}
+
+button {
+  width: 15%;
+  min-width: 90px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: black;
+  color: #e7d380;
+  padding: 8px;
+}
+
+#create-user {
+  font-family: 'Quicksand', sans-serif;
+  float: left;
+  margin: 30px;
+  width: 50%;
+}
+
+textarea {
+    resize: none;
+}
+
+submit {
+
+}
+}
+
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
+
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}

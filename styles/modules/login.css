@@ -1,4 +1,3 @@
-
 /* Desktop Version */
 
 /* body {
@@ -19,6 +18,7 @@ header {
   float: left;
   margin: 4rem;
   width: 50%;
+  color: #e0bd2e;
 }
 
 .input-field {
@@ -52,6 +52,15 @@ button {
   font-family: 'Quicksand', sans-serif;
 }
 
+#newUser {
+  font-family: 'Quicksand', sans-serif;
+  float: left;
+  margin: .5rem;
+  width: 50%;
+  color: #e6bc16;
+  
+}
+
 
 
 
@@ -76,6 +85,7 @@ button {
   float: left;
   margin: 30px;
   width: 50%;
+  color: 
 }
 
 .input-field {

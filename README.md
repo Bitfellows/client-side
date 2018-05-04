@@ -23,6 +23,7 @@ Database system: PostgreSQL
   ### 04-26-18
    We wrote out the scaffold on the whiteboard. We assigned everyone a certain page to work on.
   ### 04-28-18
+   We are close to MVP. The team worked on:
    1. We created a login page with a logo which is opening without any javascript code running for login.
    2. We created the overview page. More content needs to be added there.
    3. We created the coin search page. We have the routes working with page js. 
@@ -30,6 +31,7 @@ Database system: PostgreSQL
    5. We worked on chart js and how to incorporate it in our app. MVP was complete for chart 1, which is the summary of the 4 main coin prices. We are still working on getting the percentage changes to reflect properly.
    6. We worked on getting live data on coin search page. We are still working on getting the routes working to get the live data on to the coin search page.
   ### 04-29-18
+   Our team worked on the following today:
    1. We added content to the overview page
    2. Finished chart template and incorporated it in main page
    3. Worked on styling main page
@@ -69,3 +71,4 @@ Past projects from 201
 MDN
 You Tube
 Wikimedia
+=======

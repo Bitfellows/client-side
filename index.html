@@ -23,7 +23,7 @@
   <script type="text/x-handlebars-template" id="coin-results-template">
     <li class="coin-results" data-coinname={{name}}>
       <div class="coin-container">
-          <h3><b>Market:</b>{{market}}</h3>
+          <h5><b>Market:</b>{{market}}</h5>
           <p><b>Current Price:</b>{{price}}</p>
           <p><b>Volume:</b>{{volume}}</p>
           <p><b>Past hour(+- $):</b>{{change}}</p>
@@ -55,24 +55,29 @@
     <img id="logo" src="./assets/bflogo-cut.png" alt="Logo">
   </a>
 </header>
+
 <header class="main-header">
-  <h2 class="navHeader">
+  <!-- <h2 class="navHeader"> -->
+      
     <!-- <a href = "../"><img id="logo" class="nav-logo" src="./assets/bflogo-cut.png"/></a> -->
   </h2>
-  <ul class="nav">
-    <li>
-      <a href="../overView">Overview</a>
-    </li>
-    <li>
-      <a href="../mybit">MyBit</a>
-    </li>
-    <li>
-      <a href="../coins">Coin Search</a>
-    </li>
-    <li>
-      <a href="../about">About Us</a>
-    </li>
-  </ul>
+  <nav class="ham-nav">
+    <div id ="ham-menu" class="icon-menu hamburger"></div>
+    <ul class="nav">
+      <li>
+        <a href="../overView">Overview</a>
+      </li>
+      <li>
+        <a href="../mybit">MyBit</a>
+      </li>
+      <li>
+        <a href="../coins">Coin Search</a>
+      </li>
+      <li>
+        <a href="../about">About Us</a>
+      </li>
+    </ul>
+</nav>
 </header>
 <body>
   <section id="login">
@@ -235,9 +240,9 @@
   <section id="main-view" class="container">
     <h1 id="search">Coin Search</h1>
     <div class="coingroup">
-      <span id="coinchoice">Choose Coin</span>
+      <p id="coinchoice">Choose Coin</p>
       <select class="select_location" name="coins" id="coins">
-        <option class="default" value="" disabled selected>Please select an option</option>
+        <option class="default" value="" disabled selected>Please select your coin</option>
         <option value="btc">BTC - Bit Coin</option>
         <option value="ltc">LTC - Lite Coin</option>
         <option value="eth">ETH - Ethereum</option>
@@ -245,11 +250,10 @@
       </select>
     </div>
     <div class="qtygroup">
-      <span id="qtychoice">Choose Quantity</span>
-      <input name="quantity" id="quantity" type="number" min="0" step="0.25" value="0.00" />
+      <p id="qtychoice">Choose Quantity</p>
+      <input name="quantity" id="quantity" type="number" min="0" step="1.00" value="1.00" />
     </div>
-    <br>
-    <br>
+    <p id="resulttext" class="result"></p>
     <div class="btngroup">
       <button id="calculate" type="submit">Calculate price</button>
       <button id="reset">Reset</button>
@@ -271,12 +275,10 @@
   </section>
   <!-- mybit - lina -->
   <section id="mybitView" class="container">
-    <h2 id="welcome">Welcome to MyBit</h2>
-    <!-- <section class="mybitView-list">
-              <ul id="mybitView-list"></ul>
-            </section> -->
+    <h2 id="welcome">Welcome to MyBit Activity</h2>
+  
     <div class="useracts">
-      <h2 id="useract">Your Bit Activity</h2>
+      <!-- <h2 id="useract">Your Bit Activity</h2> -->
       <table class="userbit">
         <thead>
           <tr>

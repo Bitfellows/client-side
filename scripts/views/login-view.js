@@ -7,19 +7,18 @@ var app = app || {};
   const loginView = {};
 
   loginView.init = () => {
+    $('.container').hide();
+    $('#aboutView').hide();
+    $('.main-header').hide();
     $('.video-background').show();
     $('.video-foreground').show();
-    $('#aboutView').hide();
-    $('.container').hide();
-    $('.main-header').hide();
     $('#login').show();
     $('#create-user').show();
     $('#login-button').click((e)=>{
       e.preventDefault();
       var user_name = $('#user_name').val()
       loginView.user_name = user_name;
-      //console.log(user_name.length);
-      if(user_name.length<1){
+      if(user_name.length<2){
         alert('ENTER USERNAME & PASSWORD');
       }
       else{

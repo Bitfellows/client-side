@@ -107,6 +107,16 @@ header {
   margin-top: 5rem;
 }
 
+#create-button {
+  min-width: 80px;
+  margin: inherit;
+  border-radius: 5px;
+  background-color: black;
+  color: #e7d380;
+  padding: .3rem;
+  margin-top: 5rem;
+}
+
 section#create-user {
   font-family: 'Quicksand', sans-serif;
   float: left;

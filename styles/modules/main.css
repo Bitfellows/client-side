@@ -83,6 +83,9 @@
    input[type="text"] {
       font-size:18px;
     }
+    input[type="password"] {
+      font-size:18px;
+    }
    #quantity {
      width: 50%;
      font-size: 0.8em;
@@ -178,7 +181,7 @@
 
   .coingroup {
   /* display: inline-block; */
-  width: 65%;
+  /* width: 65%; */
   text-align: center;
   padding: 1%;
   border-radius: 3px;
@@ -190,7 +193,7 @@
   }
 
   #coins {
-  width: 60%;
+  /* width: 60%; */
   margin-right: 2%;
   margin-top: 2%;
   font-size: 1.3em;
@@ -231,7 +234,7 @@
   width: 50%;
   font-size: 1.2em;
   text-align: center;
-  margin-top: 0%;
+  margin-top: 2%;
   margin-right: 18%;
   line-height: 1em;
   }

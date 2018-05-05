@@ -10,7 +10,6 @@ var app = app || {};
     $('#login').hide();
     $('#create-user').hide();
     $('#overView').hide();
-    // $('#navHeader').show();
     $('#update-form').hide();
     $('#clear-activity').hide();
     $('#mybitView-list').empty();
@@ -32,6 +31,11 @@ var app = app || {};
   });
   $('.close').click(function(){
     $('#update-form').hide();
+  });
+  $('#save').click(function (event) {
+    alert('Successfully saved');
+    event.preventDefault();
+    page('/mybit');
   });
 
   module.mybitView = mybitView;

@@ -42,10 +42,9 @@ ENV.apiUrl = 'https://bitfellows.herokuapp.com'; //***Danger-This is only to tes
       .then(console.log);
   };
   Crypto.mybit =[];
-  //var mybitUser = module.loginView.user_name;
   Crypto.fetchActivity = () =>
     $.get(`${ENV.apiUrl}/mybit/${module.loginView.user_name}`)
-      .then(results => Crypto.mybit = results.map(activity=> new Crypto(activity)))
+      .then(results => Crypto.mybit = results.slice(-10).map(activity=> new Crypto(activity)))
   
   module.Crypto = Crypto;
 

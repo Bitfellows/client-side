@@ -2,12 +2,12 @@
 @media only screen and (max-width:425px ) {
   .hamburger {
     display: block;
-    float: right;
+    float: left;
     font-size: 3rem;
     color: white;
     position: absolute;
-    top: 3vw;
-    right: 1vw;
+    top: 26vw;
+    left: 0vw; 
   } 
   .nav{
     display: none;
@@ -25,9 +25,6 @@
     padding: 0;
     list-style: none;
     clear: both;
-  }
-  .ham-nav:hover ul {
-    display: block;
   }
   .ham-nav li {
     margin-right: .4em;

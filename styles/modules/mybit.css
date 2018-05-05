@@ -16,7 +16,7 @@
 
   .userbit {
     width: 65%;
-    color: white;
+    color: black;
     font-size: 20px;
     background-color: #e7d380;
     margin: auto;
@@ -46,6 +46,7 @@
       font-weight: bolder;
       color: #e7d380;
       margin-top: 4%;
+      background-color: black;
   }
 
   #update:hover {
@@ -58,13 +59,13 @@
     text-align: center;
     padding: .8%;
     border-radius: 12px;
-    /* margin-left: 18%; */
     font-family: 'Quicksand', sans-serif;
     font-size: 1.1em;
     font-weight: bolder; 
     color: #e7d380;
     margin-top: 4%;
     margin-left: 5%;
+    background-color: black;
 
   }
   #clear:hover {
@@ -203,7 +204,7 @@
 
   .userbit {
     width: 65%;
-    color: white;
+    color: black;
     font-size: 20px;
     background-color: #e7d380;
     margin: auto;
@@ -226,7 +227,6 @@
 
   #update {
       display: inline-block;
-      /* width: 15%; */
       text-align: center;
       padding: .8%;
       border-radius: 12px;
@@ -237,6 +237,7 @@
       font-weight: bolder;
       color: #e7d380;
       margin-top: 4%;
+      background-color: black;
   }
 
   #update:hover {
@@ -245,17 +246,17 @@
 
   #clear {
     display: inline-block;
-    width: 16%x;
+    width: 16%;
     text-align: center;
     padding: .8%;
     border-radius: 12px;
-    /* margin-left: 18%; */
     font-family: 'Quicksand', sans-serif;
     font-size: 1.1em;
     font-weight: bolder; 
     color: #e7d380;
     margin-top: 4%;
     margin-left: 5%;
+    background-color: black;
 
   }
   #clear:hover {

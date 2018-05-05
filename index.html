@@ -79,8 +79,8 @@
   <section id="login">
     <form id="login-form">
       <h3>Login</h3>
-      <input id = "user_name" class="input-field" type="text" name="username" placeholder="Please enter your username">
-      <input class="input-field" type="password" name="psw" placeholder="Please enter your password">
+      <input id = "user_name" class="input-field" type="text" name="username" placeholder="Enter your username">
+      <input class="input-field" type="password" name="psw" placeholder="Enter your password">
       <button id="login-button" type="submit">Login</button>
     </form>
   </section>
@@ -89,11 +89,11 @@
       <p>Don't have an account? Create one!</p>
       <h3>New User</h3>
       
-      <input class="input-field" type="text" id="fname" placeholder="Please enter your first name..." required>
-      <input class="input-field" type="text" id="lname" placeholder="Please enter your last name..." required>
-      <input class="input-field" type="text" id="email" placeholder="Please enter your email address..." required>
-      <input class="input-field" type="text" id="username" placeholder="Please create username..." required>
-      <input class="input-field" type="password" id="password" placeholder="Please create password..." required>
+      <input class="input-field" type="text" id="fname" placeholder="Enter your first name" required>
+      <input class="input-field" type="text" id="lname" placeholder="Enter your last name" required>
+      <input class="input-field" type="text" id="email" placeholder="Enter your email address" required>
+      <input class="input-field" type="text" id="username" placeholder="Create username" required>
+      <input class="input-field" type="password" id="password" placeholder="Create password" required>
 
       <button id="create-button" type="submit">Create</button>
 
@@ -123,7 +123,7 @@
           <img src="./assets/Lina.png" class="circle" alt="Lina">
           <div class="bio">
             <h5>Lina Mukherjee </h5>
-            <h6></h6>
+            <h6>Creating the applicaton Bitfellows with my team has been an amazing experience. I feel that its a great platform to connect people to learn about cryptocurrency and some of the most popular bitcoins offered by different companies. I am excited to be a part of the Bitfellows evolution.</h6>
           </div>
         </li>
         <li>
@@ -173,7 +173,7 @@
     <div class="coingroup">
       <p id="coinchoice">Choose Coin</p>
       <select class="select_location" name="coins" id="coins">
-        <option class="default" value="" disabled selected>Please select your coin</option>
+        <option class="default" value="" disabled selected>Select your coin</option>
         <option value="btc">BTC - Bit Coin</option>
         <option value="ltc">LTC - Lite Coin</option>
         <option value="eth">ETH - Ethereum</option>
@@ -204,12 +204,9 @@
     <h2 class="view-title">Error</h2>
     <section id="error-message"></section>
   </section>
-  <!-- mybit - lina -->
   <section id="mybitView" class="container">
     <h2 id="welcome">Welcome to MyBit Activity</h2>
-  
     <div class="useracts">
-      <!-- <h2 id="useract">Your Bit Activity</h2> -->
       <table class="userbit">
         <thead>
           <tr>
@@ -217,14 +214,11 @@
             <th class="home-td">QUANTITY</th>
           </tr>
         </thead>
-        
           <tbody id="mybitView-list">
-            
           </tbody>
-       
       </table>
     </div>
-
+    
     <div class="updatebtn">
       <button id="update" type="submit">Update Profile</button>
       <button id="clear" type="submit">Clear Activity</button>

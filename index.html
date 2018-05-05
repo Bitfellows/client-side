@@ -23,7 +23,7 @@
   <script type="text/x-handlebars-template" id="coin-results-template">
     <li class="coin-results" data-coinname={{name}}>
       <div class="coin-container">
-          <h3><b>Market:</b>{{market}}</h3>
+          <h5><b>Market:</b>{{market}}</h5>
           <p><b>Current Price:</b>{{price}}</p>
           <p><b>Volume:</b>{{volume}}</p>
           <p><b>Past hour(+- $):</b>{{change}}</p>
@@ -130,14 +130,14 @@
           <img src="./assets/Lina.png" class="circle" alt="Lina">
           <div class="bio">
             <h2>Lina Mukherjee </h2>
-            <p></p>
+            <p>Creating the applicaton Bitfellows with my team has been an amazing experience. I feel that its a great platform to connect people to learn about cryptocurrency and some of the most popular bitcoins offered by different companies. I am excited to be a part of the Bitfellows evolution. </p>
           </div>
         </li>
         <li>
           <img src="./assets/Tama.jpg" class="circle" alt="Tama">
           <div class="bio">
             <h2>Tama Rushin</h2>
-            <p>I am a Mechanical Engineer and an artist at heart. I'm the kind of artist whose mom still thinks everything I create is "amazing!" and puts it up on the refriderator. My goal is front end Java Script. I would also love to be technical recruiter for a large company.</p>
+            <p>I am a Mechanical Engineer and an artist at heart. I'm the kind of artist whose mom still thinks everything I create is "amazing!" and puts it up on the refrigerator. My goal is front end Java Script. I would also love to be technical recruiter for a large company.</p>
           </div>
         </li>
         <li>
@@ -242,9 +242,9 @@
   <section id="main-view" class="container">
     <h1 id="search">Coin Search</h1>
     <div class="coingroup">
-      <span id="coinchoice">Choose Coin</span>
+      <p id="coinchoice">Choose Coin</p>
       <select class="select_location" name="coins" id="coins">
-        <option class="default" value="" disabled selected>Please select an option</option>
+        <option class="default" value="" disabled selected>Please select your coin</option>
         <option value="btc">BTC - Bit Coin</option>
         <option value="ltc">LTC - Lite Coin</option>
         <option value="eth">ETH - Ethereum</option>
@@ -252,12 +252,10 @@
       </select>
     </div>
     <div class="qtygroup">
-      <span id="qtychoice">Choose Quantity</span>
+      <p id="qtychoice">Choose Quantity</p>
       <input name="quantity" id="quantity" type="number" min="0" step="1.00" value="1.00" />
     </div>
-    <div id="resulttext" class="result"></div>
-    <br>
-    <br>
+    <p id="resulttext" class="result"></p>
     <div class="btngroup">
       <button id="calculate" type="submit">Calculate price</button>
       <button id="reset">Reset</button>
@@ -279,12 +277,10 @@
   </section>
   <!-- mybit - lina -->
   <section id="mybitView" class="container">
-    <h2 id="welcome">Welcome to MyBit</h2>
-    <!-- <section class="mybitView-list">
-              <ul id="mybitView-list"></ul>
-            </section> -->
+    <h2 id="welcome">Welcome to MyBit Activity</h2>
+  
     <div class="useracts">
-      <h2 id="useract">Your Bit Activity</h2>
+      <!-- <h2 id="useract">Your Bit Activity</h2> -->
       <table class="userbit">
         <thead>
           <tr>

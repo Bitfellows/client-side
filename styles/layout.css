@@ -1,14 +1,3 @@
-/* nav */
-/* .navHeader {
-  display:inline;
-}
-
-header {
-  font-family: 'Quicksand', sans-serif;
-  background-color:rgba(37, 41, 49, .96);
-  /*background-color: #7b92e3; */
-  /* height:40px;
-}  */
 
 @media only screen and (max-width:425px ) {
   .hamburger {
@@ -22,13 +11,10 @@ header {
   } 
   .nav{
     display: none;
-    /* clear: both; */
   }
 
   .ham-nav:hover ul {
     display: block;
-    /* list-style-type: none;
-    margin-left: -5%; */
   }
 
   .ham-nav {
@@ -72,7 +58,6 @@ header {
   hr {
       display: none;
   }
-
 }
 
 #logo {
@@ -86,25 +71,4 @@ header {
   vertical-align: 20px;  
 }
 
-/* .nav {
-  display:inline-block;
-}
-.nav li {
-  display:inline-block;
-  margin-left:20px;
-}
-.nav li a{
-  text-decoration: none;
-  color:white;
-  transition: 230ms;
-  vertical-align: 20px;  
-}
-
-.nav li a:hover{
-  text-decoration: underline;
-  color:rgb(25, 255, 121)
-}
-.navHeader a:hover{
-  color:rgb(25, 255, 121)
-}  */
 

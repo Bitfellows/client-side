@@ -77,9 +77,10 @@ var app = app || {};
   }
   coinSearchView.initChart = function(){
     var c1 = 'black';
-    var c2 = 'gold';
-    var c3 = 'tan';
-    var c4 = 'gray';
+    var c2 = '#FFFAAE';
+    var c3 = 'white';
+    var c4 = '#5797df';
+    // var c4 = '#FF8C00';
     var chart1Data = {
       labels: [
         app.Crypto.chartData[0].name,
@@ -150,7 +151,20 @@ var app = app || {};
         options: {
           responsive: true,
           legend: {display: false},
-          title: {display: true, fontColor: 'black', text: 'Price to 7 Day Weighted Average:'}
+          title: {display: true, fontSize:18, fontColor: 'black', text: 'Price to 7 Day Weighted Average:'},
+          scales: {
+            xAxes:[{
+              ticks: {
+                fontColor:'black',
+              }
+            }],
+            yAxes:[{
+              ticks: {
+                fontColor:'black',
+                fontSize:14,
+              }
+            }]
+          }
         },
       })
     }
@@ -162,7 +176,20 @@ var app = app || {};
         options: {
           responsive: true,
           legend: {display: false},
-          title: {display: true, fontColor: 'black', text: '24 Hour Volume to US Market Cap:'}
+          title: {display: true, fontSize:18, fontColor: 'black', text: '24 Hour Volume to US Market Cap:'},
+          scales:{
+            xAxes:[{
+              ticks:{
+                fontColor:'black',
+                fontSize:14,
+              }
+            }],
+            yAxes:[{
+              ticks:{
+                fontColor:'black',
+              }
+            }]
+          }
         },
       })
     }

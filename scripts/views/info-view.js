@@ -12,7 +12,6 @@ var app = app || {};
     $('#login').hide();
     $('#create-user').hide();
     $('.main-header').show();
-    // $('#navHeader').show();
     $('#overView').show();
   }
 

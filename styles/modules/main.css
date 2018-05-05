@@ -83,6 +83,9 @@
    input[type="text"] {
       font-size:18px;
     }
+    input[type="password"] {
+      font-size:18px;
+    }
    #quantity {
      width: 50%;
      font-size: 0.8em;

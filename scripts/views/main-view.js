@@ -32,16 +32,25 @@ var app = app || {};
   });
   $('#calculate').on('click',(event)=>{
     event.preventDefault();
+    let selectedValue = $('.select_location').get(0).selectedIndex;
+    let coinQuantity = parseFloat($('#quantity').val());
+    let defaultQty = $('#quantity').val();
+    console.log(coinQuantity);
     let perCoinPrice = $('#coin-list').find('p').first().text().split(':')[1];
-    if(parseInt($('#quantity').val())>-1){
+    if(coinQuantity>-1 && defaultQty!=='0.00' && selectedValue !== 0){
       coinSearchView.submit();
-      var coinresult = (parseInt($('#quantity').val()) * perCoinPrice);
-
-      console.log(coinresult);
-
-      // $('#resulttext').append(coinresult);
+      var coinresult = coinQuantity * perCoinPrice;
       $('#resulttext').append(`${coinresult}`);
       $('#resulttext').fadeIn('slow');
+    }
+    else if(defaultQty!=='0.00' && coinQuantity>-1 && selectedValue ===0){
+      alert('please select a coin');
+    }
+    else if(defaultQty === '0.00' && selectedValue === 0){
+      alert('please select a coin & enter quantity')
+    }
+    else if(coinQuantity<=-1){
+      alert(`Quantity can't be negative`);
     }
     else{
       alert('please enter quantity');
@@ -62,6 +71,7 @@ var app = app || {};
   $('#reset').on('click',function(){
     $('.select_location').get(0).selectedIndex = 0;
     $('#quantity').val('0.00')
+    $('#resulttext').empty();
   });
   coinSearchView.initSearch = function() {
     $('#aboutView').hide();
@@ -71,6 +81,8 @@ var app = app || {};
     $('#coin-list').empty();
     $('#main-view').show();
     $('#search-view').show();
+    $('#quantity').val('0.00')
+    $('#resulttext').empty();
     coinSearchView.initChart();
     $('#chart-view').show();
     module.Crypto.all.map(coin => $('#coin-list').append(coin.toHtml()));
@@ -84,7 +96,7 @@ var app = app || {};
     var chart1Data = {
       labels: [
         app.Crypto.chartData[0].name,
-        app.Crypto.chartData[6].name,
+        app.Crypto.chartData[5].name,
         app.Crypto.chartData[1].name,
         app.Crypto.chartData[3].name
       ],
@@ -94,7 +106,7 @@ var app = app || {};
           backgroundColor: c1,
           data: [
             app.Crypto.chartData[0].price_usd,
-            app.Crypto.chartData[6].price_usd,
+            app.Crypto.chartData[5].price_usd,
             app.Crypto.chartData[1].price_usd,
             app.Crypto.chartData[3].price_usd,
             0
@@ -105,7 +117,7 @@ var app = app || {};
           backgroundColor: c2,
           data: [
             +(app.Crypto.chartData[0].percent_change_7d / 100) + +app.Crypto.chartData[0].price_usd,
-            +(app.Crypto.chartData[6].percent_change_7d / 100) + +app.Crypto.chartData[6].price_usd,
+            +(app.Crypto.chartData[5].percent_change_7d / 100) + +app.Crypto.chartData[5].price_usd,
             +(app.Crypto.chartData[1].percent_change_7d / 100) + +app.Crypto.chartData[1].price_usd,
             +(app.Crypto.chartData[3].percent_change_7d / 100) + +app.Crypto.chartData[3].price_usd,
           ]
@@ -115,7 +127,7 @@ var app = app || {};
     var chart2Data = {
       labels: [
         app.Crypto.chartData[0].name,
-        app.Crypto.chartData[6].name,
+        app.Crypto.chartData[5].name,
         app.Crypto.chartData[1].name,
         app.Crypto.chartData[3].name
       ],
@@ -125,7 +137,7 @@ var app = app || {};
           backgroundColor: c3,
           data: [
             app.Crypto.chartData[0]["24h_volume_usd"],
-            app.Crypto.chartData[6]["24h_volume_usd"],
+            app.Crypto.chartData[5]["24h_volume_usd"],
             app.Crypto.chartData[1]["24h_volume_usd"],
             app.Crypto.chartData[3]["24h_volume_usd"],
             0
@@ -136,7 +148,7 @@ var app = app || {};
           backgroundColor: c4,
           data: [
             app.Crypto.chartData[0].market_cap_usd,
-            app.Crypto.chartData[6].market_cap_usd,
+            app.Crypto.chartData[5].market_cap_usd,
             app.Crypto.chartData[1].market_cap_usd,
             app.Crypto.chartData[3].market_cap_usd
           ]

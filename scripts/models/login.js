@@ -16,6 +16,15 @@ var app = app || {};
         console.error(err);
       });
   };
+
+  NewUser.prototype.updateUser = function(callback) {
+    console.log(`${ENV.apiUrl}/updateUser:id`);
+    $.put(`${ENV.apiUrl}/updateUser:id`, this)
+      .then(callback)
+      .catch(err => {
+        console.error(err);
+      });
+  };
   $('#create-user > form').on('submit',(e) => {
     console.log('I got here');
     e.preventDefault();
@@ -32,6 +41,14 @@ var app = app || {};
     newUser.insertUser();
 
   });
+
+  $('#form').on('submit', (e) => {
+    e.preventDefault();
+    alert('Your profile is updated');
+    $('#form input[type="text"]').val('');
+    $('#form input[type="password"]').val('');
+    NewUser.updateUser();
+  })
 
   module.NewUser = NewUser;
 

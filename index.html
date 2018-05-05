@@ -23,7 +23,7 @@
   <script type="text/x-handlebars-template" id="coin-results-template">
     <li class="coin-results" data-coinname={{name}}>
       <div class="coin-container">
-          <h3><b>Market:</b>{{market}}</h3>
+          <h5><b>Market:</b>{{market}}</h5>
           <p><b>Current Price:</b>{{price}}</p>
           <p><b>Volume:</b>{{volume}}</p>
           <p><b>Past hour(+- $):</b>{{change}}</p>
@@ -55,35 +55,40 @@
     <img id="logo" src="./assets/bflogo-cut.png" alt="Logo">
   </a>
 </header>
+
 <header class="main-header">
-  <h2 class="navHeader">
+  <!-- <h2 class="navHeader"> -->
+      
     <!-- <a href = "../"><img id="logo" class="nav-logo" src="./assets/bflogo-cut.png"/></a> -->
   </h2>
-  <ul class="nav">
-    <li>
-      <a href="../overView">Overview</a>
-    </li>
-    <li>
-      <a href="../mybit">MyBit</a>
-    </li>
-    <li>
-      <a href="../coins">Coin Search</a>
-    </li>
-    <li>
-      <a href="../about">About Us</a>
-    </li>
-  </ul>
+  <nav class="ham-nav">
+    <div id ="ham-menu" class="icon-menu hamburger"></div>
+    <ul class="nav">
+      <li>
+        <a href="../overView">Overview</a>
+      </li>
+      <li>
+        <a href="../mybit">MyBit</a>
+      </li>
+      <li>
+        <a href="../coins">Coin Search</a>
+      </li>
+      <li>
+        <a href="../about">About Us</a>
+      </li>
+    </ul>
+</nav>
 </header>
 <body>
-  <section id="login" class="container">
-    <form>
+  <section id="login">
+    <form id="login-form">
       <h3>Login</h3>
       <input id = "user_name" class="input-field" type="text" name="username" placeholder="Please enter your username">
       <input class="input-field" type="password" name="psw" placeholder="Please enter your password">
       <button id="login-button" type="submit">Login</button>
     </form>
   </section>
-  <section id="create-user" class="container">
+  <section id="create-user">
     <form id="newUser">
       <p>Don't have an account? Create one!</p>
       <h3>New User</h3>
@@ -94,54 +99,52 @@
       <input class="input-field" type="text" id="username" placeholder="Please create username...">
       <input class="input-field" type="password" id="password" placeholder="Please create password...">
 
-      
-
-      <button type="submit">Create</button>
+      <button id="login-button" type="submit">Create</button>
 
     </form>
   </section>
-
+<!-- test -->
     <section id="aboutView" class="container">
       <h4 id="aboutUs">About Our Team</h4>
       <ul id="about-us">
         <li>
           <img src="./assets/James.jpg" class="circle" alt="James">
           <div class="bio">
-            <h2>James McDaniel</h2>
-            <p>I am a cycling nerd and computer geek that can't decide if I want to embrace technology or escape it. When I'm not coding,
-            I like to camp and ride bikes. Washington is the ninth state I've lived in, and so far it's my favorite.</p>
+            <h5>James McDaniel</h5>
+            <h6>I am a cycling nerd and computer geek that can't decide if I want to embrace technology or escape it. When I'm not coding,
+            I like to camp and ride bikes. Washington is the ninth state I've lived in, and so far it's my favorite.</h6>
           </div>
         </li>
         <li>
           <img src="./assets/Madhu.jpg" class="circle" alt="Madhu">
           <div class="bio">
-            <h2>Madhu Rebbana</h2>
-            <p>I am a software Engineer having 11 years of experience in IT industry working as a QA Engineer and Technical Lead. I like
+            <h5>Madhu Rebbana</h5>
+            <h6>I am a software Engineer having 11 years of experience in IT industry working as a QA Engineer and Technical Lead. I like
             outdoor activities, especially camping and biking. I love to code and become full-stack developer to build cool stuff. I
-            love Seattle when sun comes out</p>
+            love Seattle when sun comes out</h6>
           </div>
         </li>
         <li>
           <img src="./assets/Lina.png" class="circle" alt="Lina">
           <div class="bio">
-            <h2>Lina Mukherjee </h2>
-            <p></p>
+            <h5>Lina Mukherjee </h5>
+            <h6></h6>
           </div>
         </li>
         <li>
           <img src="./assets/Tama.jpg" class="circle" alt="Tama">
           <div class="bio">
-            <h2>Tama Rushin</h2>
-            <p>I am a Mechanical Engineer and an artist at heart. I'm the kind of artist whose mom still thinks everything I create is "amazing!" and puts it up on the refriderator. My goal is front end Java Script. I would also love to be technical recruiter for a large company.</p>
+            <h5>Tama Rushin</h5>
+            <h6>I am a Mechanical Engineer and an artist at heart. I'm the kind of artist whose mom still thinks everything I create is "amazing!" and puts it up on the refriderator. My goal is front end Java Script. I would also love to be technical recruiter for a large company.</h6>
           </div>
         </li>
         <li>
           <img src="./assets/Michael.png" class="circle" alt="Michael">
           <div class="bio">
-            <h2>Michael Lennerblom</h2>
-            <p>When I joined Bitfellows back in April of 2018, I knew very little about cryptocurrency and was excited to learn a bit more
+            <h5>Michael Lennerblom</h5>
+            <h6>When I joined Bitfellows back in April of 2018, I knew very little about cryptocurrency and was excited to learn a bit more
             about it, and blockchain technology as well. After just one week of being part of this team I was already in the know of
-            where to find the best crypto prices from reputable online platforms.</p>
+            where to find the best crypto prices from reputable online platforms.</h6>
           </div>
         </li>
       </ul>
@@ -237,9 +240,9 @@
   <section id="main-view" class="container">
     <h1 id="search">Coin Search</h1>
     <div class="coingroup">
-      <span id="coinchoice">Choose Coin</span>
+      <p id="coinchoice">Choose Coin</p>
       <select class="select_location" name="coins" id="coins">
-        <option class="default" value="" disabled selected>Please select an option</option>
+        <option class="default" value="" disabled selected>Please select your coin</option>
         <option value="btc">BTC - Bit Coin</option>
         <option value="ltc">LTC - Lite Coin</option>
         <option value="eth">ETH - Ethereum</option>
@@ -247,11 +250,10 @@
       </select>
     </div>
     <div class="qtygroup">
-      <span id="qtychoice">Choose Quantity</span>
-      <input name="quantity" id="quantity" type="number" min="0" step="0.25" value="0.00" />
+      <p id="qtychoice">Choose Quantity</p>
+      <input name="quantity" id="quantity" type="number" min="0" step="1.00" value="1.00" />
     </div>
-    <br>
-    <br>
+    <p id="resulttext" class="result"></p>
     <div class="btngroup">
       <button id="calculate" type="submit">Calculate price</button>
       <button id="reset">Reset</button>
@@ -273,12 +275,10 @@
   </section>
   <!-- mybit - lina -->
   <section id="mybitView" class="container">
-    <h2 id="welcome">Welcome to MyBit</h2>
-    <!-- <section class="mybitView-list">
-              <ul id="mybitView-list"></ul>
-            </section> -->
+    <h2 id="welcome">Welcome to MyBit Activity</h2>
+  
     <div class="useracts">
-      <h2 id="useract">Your Bit Activity</h2>
+      <!-- <h2 id="useract">Your Bit Activity</h2> -->
       <table class="userbit">
         <thead>
           <tr>

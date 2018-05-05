@@ -45,10 +45,25 @@ Database system: PostgreSQL
    5. Worked on login page, creating users and savings them to database
    6. Activity database-catch the value of whatever is logged in to show up in the DB
    7. Worked on the my bit page.
-
+  ### 05-02-18
+    We are close to MVP
+   1. Deleted and added item on login page.
+   2. Styling for info view page. 
+   3. Added results button on coin search page and styling.
+   4. Added code to remove form inputs after submit.
+   5. Worked on changing all tags to either ID or Class.
+   6. Styling
+   7. Added more Charts and fixed problems.
+   8. Pushed my bit to table.
+   9. Fixed login so it is validating. Push code to production server.
+  ### 05-03-18
+   1. We had it all working and we didn't like that so we made trouble for ourselves in github
+   2. for 3 hours we tried to get our app working again by getting a working master branch that we all pulled down.
+   3. Our app is working
+   4. We are fixing all the styling
+   5. We have met all project requirements.
+   6. We need to clean up the code and finish the README.md.
   
-
-
   
 ## Credits and Collaborations
 Code Fellows 301n10 instructional team and TA's.

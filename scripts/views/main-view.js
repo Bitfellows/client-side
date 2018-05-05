@@ -10,7 +10,6 @@ var app = app || {};
     $('#aboutView').hide();
     $('#login').hide();
     $('#create-user').hide();
-    // $('#delete-activity').hide();
     console.log(module.Crypto.chartData)
     $('#reset').click();
     $('#main-view').show();
@@ -57,7 +56,6 @@ var app = app || {};
     }
   })
   coinSearchView.submit = () =>{
-    //event.preventDefault();
     let cryptoObj = {
       user_name:  module.loginView.user_name,
       coin:  $('.select_location').val(),
@@ -77,7 +75,6 @@ var app = app || {};
     $('#aboutView').hide();
     $('#login').hide();
     $('#create-user').hide();
-    //$('#delete-activity').hide();
     $('#coin-list').empty();
     $('#main-view').show();
     $('#search-view').show();
@@ -92,7 +89,6 @@ var app = app || {};
     var c2 = '#FFFAAE';
     var c3 = 'white';
     var c4 = '#5797df';
-    // var c4 = '#FF8C00';
     var chart1Data = {
       labels: [
         app.Crypto.chartData[0].name,
